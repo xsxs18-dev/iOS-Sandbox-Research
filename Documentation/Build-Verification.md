@@ -17,7 +17,7 @@ An Apple-signing attempt used the existing xtool account. xtool required revocat
 
 ## Checks requiring other environments
 
-The repository includes a macOS GitHub Actions job that runs the portable tests, validates the Xcode project and builds the app for a generic iOS Simulator destination without signing. Consult the actual workflow run for its outcome; this document does not assume a queued workflow passed.
+The repository includes a macOS GitHub Actions job that runs the portable tests, validates the Xcode project and builds the app for a generic iOS Simulator destination without signing. The [initial workflow run](https://github.com/xsxs18-dev/iOS-Sandbox-Research/actions/runs/41195656752) could not start because GitHub reported an account billing/spending-limit restriction. No macOS build steps executed. Xcode runtime/build validation is therefore not claimed; the project passed local property-list validation and the same iOS Swift sources compiled with xtool. The workflow can be rerun once the account restriction is resolved.
 
 No physical iPhone experiments, protected-data transitions, Keychain outcomes, provisioned App Group accesses, universal-link associations, visual/accessibility checks or installation tests were performed during Linux implementation. There are no device-generated example results in the repository. Those observations must come from running the app on your device.
 
