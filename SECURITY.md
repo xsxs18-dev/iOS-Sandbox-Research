@@ -15,6 +15,6 @@ A byte mismatch, a contradictory verified outcome, or another implemented expect
 
 ## Reporting a defect in this tool
 
-For ordinary app bugs, use this private repository's issue tracker with redacted error details. For a security-sensitive defect, use GitHub's private vulnerability reporting when enabled; otherwise contact the repository owner privately before sending sensitive material. No response time or bounty is promised.
+For ordinary app bugs, use the repository's issue tracker with redacted error details. Issues are public, so omit sensitive evidence. For a security-sensitive defect, use GitHub's private vulnerability reporting when enabled; otherwise contact the repository owner privately before sending sensitive material. No response time or bounty is promised.
 
 Current release sources are the supported baseline. Researchers should review any code modifications that expand resource scope. Filesystem paths in imported sessions are inert text: import, reporting and comparison never execute or probe those paths.

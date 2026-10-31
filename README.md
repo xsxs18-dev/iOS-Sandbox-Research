@@ -1,14 +1,38 @@
-# iOS-Sandbox-Research
+# iOS Sandbox Research
 
-**SandboxResearchLab is a defensive, evidence-driven iOS research application.** It measures ordinary access to its own container, its own newly created Keychain item, and an explicitly authorized App Group. It uses SwiftUI, Foundation, UIKit and Security with no third-party runtime dependencies.
+A hands-on lab for exploring what an ordinary iPhone app can do inside its own sandbox.
 
-This is a research tool, not an exploit framework. It contains no sandbox escapes, private security APIs, cross-app container probes, credential collection, or automatic vulnerability claims. Every observation comes from a recorded operation. Software test fixtures never become research reports.
+SandboxResearchLab lets you create files, try different protection settings, work with a disposable Keychain item, and keep a record of what happened. You can run the same experiments before and after an iOS update, compare the results, and export them for a closer look.
 
-## Quick start
+The app uses public Apple APIs and works with data it creates itself. It doesn't read another app's private files, bypass security controls, or turn an unexpected result into a vulnerability claim.
 
-### Bazzite / Linux with xtool
+**[Download the IPA](https://github.com/xsxs18-dev/iOS-Sandbox-Research/releases/latest)** · **[Research methodology](Documentation/Research-Methodology.md)** · **[Build verification](Documentation/Build-Verification.md)**
 
-With Swift and the Darwin SDK installed (`swift sdk list` should include `darwin`):
+> The v1.0.0 IPA is built, but still needs Apple signing and provisioning for your device. The code has been compiled for iOS and the portable tests have passed. Real iPhone observations and screenshots still need to come from running the app.
+
+## What you can try
+
+The dashboard has a **Run Safe Research Suite** button. It runs 15 automatic experiments and saves their results as a research session.
+
+| Area | What the lab does |
+| --- | --- |
+| App container | Creates, reads, modifies and deletes test files in Home, Documents, Library, Caches, tmp and Application Support. Also checks directory creation, enumeration and file attributes. |
+| Persistence | Leaves a small marker and checks whether it survives a later app launch. |
+| Keychain | Creates a disposable item, reads it back, updates it, deletes it and checks that it is gone. |
+| File protection | Applies and inspects all four documented protection classes on app-created files. |
+| Entitlements | Shows app configuration and separates directly observed information from values that still need signing verification. |
+| App Groups | Runs file operations in your configured, authorized group container. Without a group, it explains the setup. |
+| Communication | Inspects the app's URL configuration. Manual tests cover an own-scheme callback and sharing a lab document through the system share sheet. |
+
+**Manual Lab** contains the tests that need your involvement: locking and unlocking the phone, checking persistence after a relaunch, opening the app's URL scheme, and choosing a share destination. Universal-link delivery can also be recorded after you configure a domain you own. There is no bundled receiving share extension; the share sheet uses the apps and extensions you choose.
+
+## Build and install
+
+The app targets **iOS 17 or later**. It uses SwiftUI, Foundation, UIKit and Security, with no third-party runtime dependencies.
+
+### On Linux / Bazzite
+
+You'll need Swift, [xtool](https://xtool.sh/documentation/xtool/installation-linux/) and its Darwin SDK. `swift sdk list` should include `darwin`.
 
 ```sh
 git clone https://github.com/xsxs18-dev/iOS-Sandbox-Research.git
@@ -17,113 +41,107 @@ swift test --package-path Core
 xtool dev build --configuration release --ipa
 ```
 
-`xtool dev build` compiles and bundles without Apple provisioning unless `--sign` is supplied. An unsigned or ad-hoc signed IPA needs valid Apple signing before installation. Read the release notes for the **actual** signing status of each downloadable artifact.
-
-To install your own development build, connect and trust your iPhone, enable Developer Mode, configure your Apple account with `xtool auth login` if necessary, and run:
+That builds the IPA without Apple device provisioning. To install a development build, set up your Apple signing account, connect and trust your iPhone, enable Developer Mode, then run:
 
 ```sh
 xtool dev
 ```
 
-To produce an Apple-signed IPA with configured signing and a registered device:
+If you haven't configured an account yet, use `xtool auth login`. With a working signing setup, you can also produce a signed IPA:
 
 ```sh
 xtool dev build --configuration release --sign --ipa
 ```
 
-The checked-in `xtool.yml` supplies metadata, an icon, the privacy manifest and empty default entitlements. Optional App Groups need developer-account provisioning; see [App Groups](Documentation/App-Groups.md). For toolchain installation and device pairing, use the [official xtool instructions](https://xtool.sh/documentation/xtool/installation-linux/) and [device tutorial](https://xtool.sh/tutorials/xtool/first-app/).
+See xtool's [device setup guide](https://xtool.sh/tutorials/xtool/first-app/) for pairing and installation. Read any certificate-management prompts carefully; replacing existing certificates can affect other development apps.
 
-### Xcode / macOS
+### In Xcode
 
-1. Open **SandboxResearchLab.xcodeproj**, not the top-level package as a macOS app.
-2. Select the **SandboxResearchLab** scheme and your iPhone (iOS 17 or later).
-3. Under the app target's **Signing & Capabilities**, select your Apple Developer Team. Change the bundle identifier if your account requires a unique identifier.
-4. Keep automatic signing enabled. The default build needs no App Groups or Keychain Sharing capability.
-5. Connect/trust the device, enable Developer Mode when prompted, and press **Run**.
+1. Open `SandboxResearchLab.xcodeproj`.
+2. Select the **SandboxResearchLab** scheme and your iPhone.
+3. In **Signing & Capabilities**, choose your Apple Developer Team. Change the bundle identifier if needed for your account.
+4. Leave automatic signing enabled and press **Run**.
 
-Use a current Xcode release supporting Swift tools 6.0 and your device OS (Xcode 16 or newer). The local `Core` package resolves without downloading dependencies. On macOS, `swift test --package-path Core` runs the portable tests; the app scheme builds the iOS application.
+Use Xcode 16 or newer, with support for your phone's iOS version. The default setup doesn't need App Groups or Keychain Sharing. Optional group setup is covered in [App-Groups.md](Documentation/App-Groups.md).
 
-## Run real research
+## Your first session
 
-On **Dashboard**, press **Run Safe Research Suite**. The app runs 15 automatic experiments sequentially, displays `Experiment N/15`, and checkpoints the session after each experiment. Keep the app in the foreground. A terminated session is shown as interrupted next launch; it is never silently treated as completed.
+Open the app and press **Run Safe Research Suite** on the dashboard. Keep it in the foreground while the progress counter runs.
 
-Open the latest session for the file-access matrix, objectives, methods, expected and actual behavior, errors, evidence IDs, and notes. **Logs** filters evidence by experiment, category, state and text. **History** supports viewing, importing, comparing, exporting and deleting sessions.
+Open the completed session to see the file-access matrix and individual observations. Each record includes the operation, resource, expected result, actual result, timestamp, environment and any error. You can attach notes to a session or a specific piece of evidence. **Logs** lets you filter by experiment, category, result or text.
 
-The first persistence test creates a baseline and reports `NOT_TESTED` for cross-launch survival. Terminate and relaunch the app, then run it again without reinstalling. Use **Manual Lab** for lock-state observations, a selected file-protection class, an own-scheme URL round trip, or sharing a non-sensitive lab document.
+For the persistence test, the first run only establishes a baseline. Close the app from the app switcher, launch it again, and repeat the test without reinstalling. Only then can it check whether the marker survived.
 
-## Experiments
+For lock-state testing, use **Manual Lab → Arm lock-state observation**, lock and unlock the phone, then return and choose **Stop & save observation**. iOS may suspend the app while locked, so a missing sample tells you nothing about whether access would have succeeded.
 
-| Category | Implemented behavior | Qualification |
-| --- | --- | --- |
-| Own container | Home, Documents, Library, Caches, tmp, Application Support; create directory/file, read, modify/read back, enumerate, attributes, delete/verify, cleanup | Only unique lab children are touched |
-| Persistence | Marker and independent receipt across process launches | First launch and same-launch repeats are not persistence proof |
-| Entitlements | Bundle and build metadata, provenance, group resolution, own Keychain item's observed group | No unsupported general entitlement dump |
-| App Group | Full file lifecycle in the explicitly resolved group | Optional; missing configuration is `NOT_SUPPORTED` |
-| Keychain | Add, retrieve/verify, update, retrieve/verify, delete, verify not found | Unique service/account, no broad queries |
-| Communication | Scheme/configuration inspection; manual own-URL callback and document sharing; incoming configured universal-link activities | No private service calls or unrequested app probing |
-| File protection | Create/set/inspect/read/delete for all four documented classes | Attribute checks alone do not prove lock enforcement |
-| Manual lock observation | Closed-file reads plus a retained Class B handle around delivered notifications | iOS suspension and event timing limit observations |
+## Reading the results
 
-There is no bundled receiving share extension. Public share-sheet interaction can exercise installed extensions chosen by the researcher. This lab's App Group access establishes this process's access, not proof of cross-process exchange. Universal links are optional because a researcher-owned web domain and AASA deployment are required; see [Communication](Documentation/Communication.md).
-
-## Results and interpretation
-
-| State | Meaning |
+| Result | Meaning |
 | --- | --- |
-| `PASS` | The operation met its stated expectation |
-| `DENIED` | Access was refused; normal enforcement is a possible explanation |
-| `ERROR` | An operational error prevented a clean result |
-| `NOT_SUPPORTED` | The capability/configuration was unavailable |
-| `NOT_TESTED` | Not performed, prerequisite missing, or interaction/later launch required |
-| `NEEDS_REVIEW` | Recorded behavior contradicted an expectation; manually investigate |
+| `PASS` | This operation behaved as expected. |
+| `DENIED` | iOS refused access. That may be normal enforcement. |
+| `ERROR` | Something prevented a clean measurement; inspect the error. |
+| `NOT_SUPPORTED` | The capability or required configuration wasn't available. |
+| `NOT_TESTED` | The operation wasn't performed, or needs another action or launch. |
+| `NEEDS_REVIEW` | An observation contradicted the expectation and deserves a closer look. |
 
-An experiment's summary is conservative: review > error > denied > not tested > pass > not supported. Read individual operations, especially when a configuration experiment combines observations with manual verification requirements. **No state means “vulnerability confirmed.”**
+Read the individual operations as well as the summary. A successful file read confirms that particular read; it doesn't prove the sandbox is secure. A denied operation doesn't establish a vulnerability either.
 
-## Exports and iOS-version comparisons
+## Save, export and compare
 
-Choose **Export JSON & Markdown** in a session. Both files are offered through the system share sheet. JSON schema version 1 preserves environment snapshots, timestamps, operations, results, error domain/code/description, evidence identifiers and researcher notes. Dates are milliseconds since Unix epoch in JSON and ISO 8601 in Markdown. Exports contain real app paths and signing-related configuration; review before sharing.
+Sessions are stored locally and appear in **History**, where you can view, compare, export or delete them. **Export JSON & Markdown** gives you both the complete structured data and a readable report through the system share sheet. Reports are generated from recorded operations, not prewritten example findings.
 
-For comparisons, retain a baseline export before updating iOS. Run the same procedure after updating; import the older JSON via **History → Import session JSON** if needed. Choose **Compare two sessions**, with A as baseline and B as follow-up. The UI highlights changed states/configuration/errors, new failures, newly allowed operations and review candidates. It matches experiment/operation identifiers rather than random test paths. Error descriptions are preserved verbatim, so path-specific error messages can also appear as error changes. Hardware, signing, app build and protection-state differences are shown as confounders. Imported evidence is explicitly unauthenticated; duplicate session IDs are rejected.
+To compare iOS versions, export a baseline before updating, repeat the same procedure afterward, and choose **History → Compare two sessions**. You can import an older session's JSON if it is on another device. Choose the baseline as A and the follow-up as B.
 
-## Architecture and repository
+The comparison highlights changed results and errors, new failures, newly allowed operations and records needing review. Keep the app build, signing setup, device and protection state as similar as possible. A difference isn't necessarily caused by the OS update. Imported sessions are marked as unauthenticated source data.
+
+Exports contain relevant container paths, app configuration and any notes you add. Check them before sharing. The app has no telemetry or automatic report uploads.
+
+## Finding your way around the code
 
 ```text
-SandboxResearchLab.xcodeproj/      Ready-to-open iOS project and shared scheme
-Package.swift, xtool.yml           Linux iOS build path
 Sources/SandboxResearchLab/
-  UI/                             Dashboard, matrix, logs, manual lab, history, comparison
-  Services/                       Main-actor UI state, environment, configuration, artifacts
-  Experiments/                    iOS runner, Keychain, file-protection/notification probes
+  UI/                         Dashboard, experiments, manual lab, history and logs
+  Services/                   App state, environment, configuration and exports
+  Experiments/                iOS-specific Keychain and protection experiments
 Core/
   Sources/ResearchCore/
-    Models/                       Codable sessions, experiments, evidence, errors
-    Experiments/                  Reusable file-access and persistence engines
-    Logging/                      Recorder, classification and filters
-    Persistence/                  Actor-isolated atomic session storage
-    Reporting/                    Markdown generation and semantic comparisons
-    Utilities/                    JSON validation and formatting
-  Tests/ResearchCoreTests/         Portable unit and isolated host-filesystem tests
-Resources/                        Info.plist, entitlements, icon, privacy manifest
-Documentation/                    Security model and reproducible procedures
-Research/                         Handling real findings and private evidence
-Example-Reports/                   Policy: no fabricated device observations
-Scripts/                          Reproducible project generation and artifact validation
+    Models/                   Sessions, experiments, evidence and errors
+    Experiments/              File-access and persistence engines
+    Logging/                  Recording, filters and error classification
+    Persistence/              Local session storage
+    Reporting/                Markdown reports and session comparisons
+    Utilities/                JSON validation and formatting
+  Tests/ResearchCoreTests/    Portable tests
+Resources/                    App metadata, icon, privacy manifest and entitlements
+Documentation/                Setup guides and research procedures
+Research/                     Guidance for handling real findings
+Example-Reports/              No fabricated device reports
+Scripts/                      Xcode project generation and IPA validation
+SandboxResearchLab.xcodeproj/ Xcode project
+Package.swift, xtool.yml      Linux/xtool build configuration
 ```
 
-UI state is main-actor isolated. Filesystem/Keychain experiments and session persistence execute through worker actors. Sessions are checkpointed between experiments; a process kill during an individual experiment can leave its latest uncheckpointed operations and uniquely named test files unrecorded. The app never sweeps arbitrary directories to hide that limitation.
+The UI runs on the main actor. File and Keychain work, exports and session storage use worker actors. The same Core package is used by both build paths. See [CONTRIBUTING.md](CONTRIBUTING.md) if you'd like to change or add an experiment.
+
+## Tests and current limits
+
+Run `swift test --package-path Core` to check the portable logic. The 23 tests cover JSON, reports, comparisons, state handling, errors, storage and file operations in isolated host directories. These are software tests, not evidence of iPhone sandbox behavior. The actual checks performed are recorded in [Build-Verification.md](Documentation/Build-Verification.md).
+
+A few limits matter when interpreting a session:
+
+- Simulator observations are labeled and shouldn't be treated as physical-device results.
+- File-protection attributes alone don't prove locked-device enforcement. This foreground app cannot measure access before the first unlock after reboot.
+- Caches and temporary files can be purged. Reinstallation or restoring a backup can invalidate a persistence baseline.
+- Sessions are saved between experiments. Terminating the app during an experiment can lose its latest observations and leave its uniquely named test files behind.
+- App Group access in this process doesn't prove that a second app exchanged data with it. Universal links need your own domain, association file and signing configuration.
 
 ## Screenshots
 
-Device screenshots have not been manufactured. Capture these after running on your own iPhone: dashboard, file-access matrix, filtered evidence, comparison, and manual protection observations. Remove container identifiers or personal notes before publishing them. UI supports Dynamic Type, semantic system colors, dark appearance, VoiceOver labels and scrollable matrix columns; visual/device accessibility review still requires running the app.
+No device screenshots yet. Useful captures would be the dashboard after a real run, the file-access matrix and a session comparison. Review paths and notes before publishing a screenshot.
 
-## Validation
+## Research responsibly
 
-Run `swift test --package-path Core`. Tests cover report generation, JSON validation/round trips, state aggregation, exact errors, filtering, comparisons, atomic storage, malformed files, duplicate import rejection and isolated host-filesystem orchestration. Synthetic fixtures are clearly identified in test source. They do **not** validate iOS sandbox enforcement, Keychain behavior, locked-device protection or physical persistence. See [Build verification](Documentation/Build-Verification.md) for the actual implementation-time checks and their limits.
+Use devices, apps, groups and domains you own or have permission to test. If something looks wrong, preserve the session, repeat the experiment on hardware, and rule out configuration, timing and measurement errors first.
 
-## Limits and ethics
-
-No network collection or telemetry runs in the app. No device name, serial number, advertising/vendor identifier, contact, photo or user credential is collected. The hardware model, OS/build, random per-process launch ID, app configuration and relevant lab paths are recorded. Notes and explicit exports are controlled by you. Sessions live in Application Support and may be included in normal device backups.
-
-This measures allowed operations and normal API enforcement, not the completeness of the sandbox. Simulator behavior is labeled. Lock testing cannot force background execution or test pre-first-unlock access after reboot. Cached and temporary files can be purged. App deletion/reinstallation can invalidate continuity; Keychain lifetime can differ from container lifetime. Disk-full, protection and signing errors are not automatically security findings.
-
-Use only apps, devices, groups and domains you own or are authorized to test. Preserve unexpected evidence and follow [SECURITY.md](SECURITY.md) and [Responsible Disclosure](Documentation/Responsible-Disclosure.md) before making any security claim.
+See [SECURITY.md](SECURITY.md) and the [responsible-disclosure guide](Documentation/Responsible-Disclosure.md) for the next steps. Unexpected behavior stays a research question until the evidence supports a conclusion.
