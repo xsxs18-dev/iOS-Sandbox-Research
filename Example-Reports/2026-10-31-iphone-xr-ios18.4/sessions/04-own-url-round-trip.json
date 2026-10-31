@@ -1,0 +1,110 @@
+{
+  "completion" : "completed",
+  "endTime" : 1793449590949.905,
+  "environment" : {
+    "appVersion" : "1.0.0",
+    "application" : "SandboxResearchLab",
+    "build" : "1.0.0",
+    "bundleID" : "com.xsxs18.sandboxresearchlab",
+    "capturedAt" : 1793449587937.1262,
+    "deviceModel" : "iPhone11,8",
+    "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+    "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+    "protectedDataAvailable" : true,
+    "simulator" : false
+  },
+  "experiments" : [
+    {
+      "definition" : {
+        "automatic" : false,
+        "category" : "Communication",
+        "expectedBehavior" : "The operating system opens the registered scheme and this process receives the exact pending nonce. A handler callback alone does not authenticate a sender.",
+        "id" : "manual.url",
+        "method" : "Open sandboxresearchlab://probe with a random nonce; record open completion and validate the incoming nonce.",
+        "name" : "Own URL scheme round trip",
+        "objective" : "Verify a nonce-bearing URL is delivered back to this app."
+      },
+      "endTime" : 1793449590949.898,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449587937.1929,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "F61C8BD4-EA3E-4E50-9032-60B13480F990",
+      "operations" : [
+        {
+          "actualResult" : "open completion returned true",
+          "category" : "Communication",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449590866.086,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "System accepts own registered URL",
+          "experimentID" : "manual.url",
+          "id" : "82775EEF-3BAC-4A66-9678-7098D64171B2",
+          "operation" : "OPEN",
+          "researcherNotes" : "",
+          "resource" : "sandboxresearchlab://probe",
+          "result" : "PASS",
+          "timestamp" : 1793449590866.0933
+        },
+        {
+          "actualResult" : "Exact pending nonce received by onOpenURL",
+          "category" : "Communication",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449590949.8801,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Incoming nonce matches pending probe",
+          "experimentID" : "manual.url",
+          "id" : "E3F22A8B-1CB7-4E51-ABD4-BB7D5C849219",
+          "operation" : "RECEIVE",
+          "researcherNotes" : "",
+          "resource" : "Own scheme callback (payload omitted)",
+          "result" : "PASS",
+          "timestamp" : 1793449590949.881
+        }
+      ],
+      "researchNotes" : "",
+      "result" : "PASS",
+      "startTime" : 1793449587937.1938
+    }
+  ],
+  "id" : "B7668EB3-C21C-469A-8882-C02820193AF4",
+  "researcherNotes" : "",
+  "schemaVersion" : 1,
+  "startTime" : 1793449587937.1272,
+  "title" : "Own URL scheme round trip"
+}

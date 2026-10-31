@@ -1,0 +1,3061 @@
+{
+  "completion" : "completed",
+  "endTime" : 1793449531112.5432,
+  "environment" : {
+    "appVersion" : "1.0.0",
+    "application" : "SandboxResearchLab",
+    "build" : "1.0.0",
+    "bundleID" : "com.xsxs18.sandboxresearchlab",
+    "capturedAt" : 1793449530082.252,
+    "deviceModel" : "iPhone11,8",
+    "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+    "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+    "protectedDataAvailable" : true,
+    "simulator" : false
+  },
+  "experiments" : [
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "Container",
+        "expectedBehavior" : "Operations on this application's own test files should succeed while storage and protection conditions permit.",
+        "id" : "files.home",
+        "method" : "Create a unique lab directory, create/read/modify a known byte sequence, enumerate and inspect it, then delete it and verify absence.",
+        "name" : "App Home",
+        "objective" : "Measure ordinary file operations in App Home."
+      },
+      "endTime" : 1793449530283.3728,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530238.966,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+        {
+          "code" : 513,
+          "description" : "You don’t have permission to save the file “SandboxResearchLab-5296CAC4-1F04-46C7-BFF7-4573AB0D6683” in the folder “APP-DATA-CONTAINER”.",
+          "domain" : "NSCocoaErrorDomain",
+          "underlying" : "Error Domain=NSPOSIXErrorDomain Code=1 \"Operation not permitted\""
+        }
+      ],
+      "id" : "A127AEAB-A2EB-41A4-B386-FBAB75060800",
+      "operations" : [
+        {
+          "actualResult" : "You don’t have permission to save the file “SandboxResearchLab-5296CAC4-1F04-46C7-BFF7-4573AB0D6683” in the folder “APP-DATA-CONTAINER”.",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530238.966,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "error" : {
+            "code" : 513,
+            "description" : "You don’t have permission to save the file “SandboxResearchLab-5296CAC4-1F04-46C7-BFF7-4573AB0D6683” in the folder “APP-DATA-CONTAINER”.",
+            "domain" : "NSCocoaErrorDomain",
+            "underlying" : "Error Domain=NSPOSIXErrorDomain Code=1 \"Operation not permitted\""
+          },
+          "expectedResult" : "Create isolated test directory",
+          "experimentID" : "files.home",
+          "id" : "62D82E81-8667-424B-BF9C-14D4B69241FF",
+          "operation" : "DIRECTORY_CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/SandboxResearchLab-5296CAC4-1F04-46C7-BFF7-4573AB0D6683",
+          "result" : "DENIED",
+          "timestamp" : 1793449530283.3591
+        },
+        {
+          "actualResult" : "Prerequisite directory creation failed",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530238.966,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Exercise own test file",
+          "experimentID" : "files.home",
+          "id" : "E4C29F6A-563F-4B44-92C2-479A2509C427",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/SandboxResearchLab-5296CAC4-1F04-46C7-BFF7-4573AB0D6683/probe.txt",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530283.364
+        },
+        {
+          "actualResult" : "Prerequisite directory creation failed",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530238.966,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Exercise own test file",
+          "experimentID" : "files.home",
+          "id" : "98002A0E-1DE1-41FC-AE92-64A8E9DAE334",
+          "operation" : "READ",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/SandboxResearchLab-5296CAC4-1F04-46C7-BFF7-4573AB0D6683/probe.txt",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530283.366
+        },
+        {
+          "actualResult" : "Prerequisite directory creation failed",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530238.966,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Exercise own test file",
+          "experimentID" : "files.home",
+          "id" : "0E2292C6-88C5-4B36-AA88-5C9D970CDF8C",
+          "operation" : "WRITE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/SandboxResearchLab-5296CAC4-1F04-46C7-BFF7-4573AB0D6683/probe.txt",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530283.3682
+        },
+        {
+          "actualResult" : "Prerequisite directory creation failed",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530238.966,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Exercise own test file",
+          "experimentID" : "files.home",
+          "id" : "BE0405EF-84FD-40A6-9777-C858F2D3592C",
+          "operation" : "ENUMERATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/SandboxResearchLab-5296CAC4-1F04-46C7-BFF7-4573AB0D6683/probe.txt",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530283.3691
+        },
+        {
+          "actualResult" : "Prerequisite directory creation failed",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530238.966,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Exercise own test file",
+          "experimentID" : "files.home",
+          "id" : "93C9EFE8-B282-4909-9F66-9003C2DE3DFD",
+          "operation" : "ATTRIBUTES",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/SandboxResearchLab-5296CAC4-1F04-46C7-BFF7-4573AB0D6683/probe.txt",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530283.371
+        },
+        {
+          "actualResult" : "Prerequisite directory creation failed",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530238.966,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Exercise own test file",
+          "experimentID" : "files.home",
+          "id" : "7ECE1198-6485-4B3A-BBD6-4F65C4A54D69",
+          "operation" : "DELETE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/SandboxResearchLab-5296CAC4-1F04-46C7-BFF7-4573AB0D6683/probe.txt",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530283.3728
+        }
+      ],
+      "researchNotes" : "",
+      "result" : "DENIED",
+      "startTime" : 1793449530239.555
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "Container",
+        "expectedBehavior" : "Operations on this application's own test files should succeed while storage and protection conditions permit.",
+        "id" : "files.documents",
+        "method" : "Create a unique lab directory, create/read/modify a known byte sequence, enumerate and inspect it, then delete it and verify absence.",
+        "name" : "Documents",
+        "objective" : "Measure ordinary file operations in Documents."
+      },
+      "endTime" : 1793449530318.791,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530315.279,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "FF8C9576-6852-4547-9EBE-28FD2EAF486B",
+      "operations" : [
+        {
+          "actualResult" : "Directory created",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530315.279,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create isolated test directory",
+          "experimentID" : "files.documents",
+          "id" : "352CF310-EBE0-43D4-826F-9670C77B3B83",
+          "operation" : "DIRECTORY_CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Documents/SandboxResearchLab-77C735EB-7B76-4AA1-A4D1-99CAEF6194EF",
+          "result" : "PASS",
+          "timestamp" : 1793449530316.027
+        },
+        {
+          "actualResult" : "Created 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530315.279,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create new file with known bytes",
+          "experimentID" : "files.documents",
+          "id" : "1280A694-747D-4137-B318-532E670E7342",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Documents/SandboxResearchLab-77C735EB-7B76-4AA1-A4D1-99CAEF6194EF/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530316.674
+        },
+        {
+          "actualResult" : "Read and verified 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530315.279,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read exact initial bytes",
+          "experimentID" : "files.documents",
+          "id" : "3F8D0E81-554C-4103-9220-645611570707",
+          "operation" : "READ",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Documents/SandboxResearchLab-77C735EB-7B76-4AA1-A4D1-99CAEF6194EF/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530316.762
+        },
+        {
+          "actualResult" : "Modified and verified 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530315.279,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Modify file and read back exact new bytes",
+          "experimentID" : "files.documents",
+          "id" : "6CDAC607-1030-45DB-902E-1672A2024FD9",
+          "operation" : "WRITE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Documents/SandboxResearchLab-77C735EB-7B76-4AA1-A4D1-99CAEF6194EF/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530317.103
+        },
+        {
+          "actualResult" : "Entries: probe.txt",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530315.279,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Enumeration includes probe.txt",
+          "experimentID" : "files.documents",
+          "id" : "55D24CB6-0FCC-442F-B984-FFA0DE055DD2",
+          "operation" : "ENUMERATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Documents/SandboxResearchLab-77C735EB-7B76-4AA1-A4D1-99CAEF6194EF",
+          "result" : "PASS",
+          "timestamp" : 1793449530317.1948
+        },
+        {
+          "actualResult" : "NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:25:30 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:25:30 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionCompleteUntilFirstUserAuthentication\nNSFileReferenceCount=1\nNSFileSize=23\nNSFileSystemFileNumber=34686237\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530315.279,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read file attributes",
+          "experimentID" : "files.documents",
+          "id" : "52B8714D-FDD9-4D4E-8930-5B99D1A78D81",
+          "operation" : "ATTRIBUTES",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Documents/SandboxResearchLab-77C735EB-7B76-4AA1-A4D1-99CAEF6194EF/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530318.192
+        },
+        {
+          "actualResult" : "Deleted; absence verified by directory enumeration",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530315.279,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Delete test file and confirm absence",
+          "experimentID" : "files.documents",
+          "id" : "DD62B829-8249-470B-9918-0E4B282A05B3",
+          "operation" : "DELETE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Documents/SandboxResearchLab-77C735EB-7B76-4AA1-A4D1-99CAEF6194EF/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530318.513
+        },
+        {
+          "actualResult" : "Test directory removed",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530315.279,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Remove this run's test directory",
+          "experimentID" : "files.documents",
+          "id" : "149B3FB5-2632-4162-8636-8427A6CB0DCA",
+          "operation" : "CLEANUP",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Documents/SandboxResearchLab-77C735EB-7B76-4AA1-A4D1-99CAEF6194EF",
+          "result" : "PASS",
+          "timestamp" : 1793449530318.79
+        }
+      ],
+      "researchNotes" : "Only the unique lab directory was enumerated. This is an allowed-access baseline, not a cross-container or sandbox-escape test.",
+      "result" : "PASS",
+      "startTime" : 1793449530315.807
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "Container",
+        "expectedBehavior" : "Operations on this application's own test files should succeed while storage and protection conditions permit.",
+        "id" : "files.library",
+        "method" : "Create a unique lab directory, create/read/modify a known byte sequence, enumerate and inspect it, then delete it and verify absence.",
+        "name" : "Library",
+        "objective" : "Measure ordinary file operations in Library."
+      },
+      "endTime" : 1793449530369.735,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530367.031,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "84350E38-EEAF-4E2A-830F-8C03E8848226",
+      "operations" : [
+        {
+          "actualResult" : "Directory created",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530367.031,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create isolated test directory",
+          "experimentID" : "files.library",
+          "id" : "C2E11000-D964-4EB6-B1E0-8CFACF7D75B0",
+          "operation" : "DIRECTORY_CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/SandboxResearchLab-3B6AA930-10E1-4539-94AE-5B592A147FE3",
+          "result" : "PASS",
+          "timestamp" : 1793449530367.7302
+        },
+        {
+          "actualResult" : "Created 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530367.031,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create new file with known bytes",
+          "experimentID" : "files.library",
+          "id" : "6AD57DED-A05A-4AFC-A950-B75B18338613",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/SandboxResearchLab-3B6AA930-10E1-4539-94AE-5B592A147FE3/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530368.351
+        },
+        {
+          "actualResult" : "Read and verified 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530367.031,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read exact initial bytes",
+          "experimentID" : "files.library",
+          "id" : "93724F7F-FA29-4DDF-A62D-72685AE1097A",
+          "operation" : "READ",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/SandboxResearchLab-3B6AA930-10E1-4539-94AE-5B592A147FE3/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530368.437
+        },
+        {
+          "actualResult" : "Modified and verified 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530367.031,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Modify file and read back exact new bytes",
+          "experimentID" : "files.library",
+          "id" : "DBBCC663-DDED-4C63-8D67-BD8BA0F0B7B8",
+          "operation" : "WRITE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/SandboxResearchLab-3B6AA930-10E1-4539-94AE-5B592A147FE3/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530368.749
+        },
+        {
+          "actualResult" : "Entries: probe.txt",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530367.031,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Enumeration includes probe.txt",
+          "experimentID" : "files.library",
+          "id" : "73D962AE-01A5-4681-B8BA-3621DE8114E7",
+          "operation" : "ENUMERATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/SandboxResearchLab-3B6AA930-10E1-4539-94AE-5B592A147FE3",
+          "result" : "PASS",
+          "timestamp" : 1793449530368.826
+        },
+        {
+          "actualResult" : "NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:25:30 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:25:30 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionCompleteUntilFirstUserAuthentication\nNSFileReferenceCount=1\nNSFileSize=23\nNSFileSystemFileNumber=34686241\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530367.031,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read file attributes",
+          "experimentID" : "files.library",
+          "id" : "9874B446-7ADD-4678-A90F-ABF9CBFC1E28",
+          "operation" : "ATTRIBUTES",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/SandboxResearchLab-3B6AA930-10E1-4539-94AE-5B592A147FE3/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530369.18
+        },
+        {
+          "actualResult" : "Deleted; absence verified by directory enumeration",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530367.031,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Delete test file and confirm absence",
+          "experimentID" : "files.library",
+          "id" : "CA36C503-A2C8-4E83-A766-BB14048869EE",
+          "operation" : "DELETE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/SandboxResearchLab-3B6AA930-10E1-4539-94AE-5B592A147FE3/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530369.4639
+        },
+        {
+          "actualResult" : "Test directory removed",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530367.031,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Remove this run's test directory",
+          "experimentID" : "files.library",
+          "id" : "32489132-A181-4B13-994C-00766562442C",
+          "operation" : "CLEANUP",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/SandboxResearchLab-3B6AA930-10E1-4539-94AE-5B592A147FE3",
+          "result" : "PASS",
+          "timestamp" : 1793449530369.735
+        }
+      ],
+      "researchNotes" : "Only the unique lab directory was enumerated. This is an allowed-access baseline, not a cross-container or sandbox-escape test.",
+      "result" : "PASS",
+      "startTime" : 1793449530367.538
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "Container",
+        "expectedBehavior" : "Operations on this application's own test files should succeed while storage and protection conditions permit.",
+        "id" : "files.caches",
+        "method" : "Create a unique lab directory, create/read/modify a known byte sequence, enumerate and inspect it, then delete it and verify absence.",
+        "name" : "Library/Caches",
+        "objective" : "Measure ordinary file operations in Library/Caches."
+      },
+      "endTime" : 1793449530424.392,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530421.705,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "BF731C04-1616-4B41-8385-61BD9F020A73",
+      "operations" : [
+        {
+          "actualResult" : "Directory created",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530421.705,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create isolated test directory",
+          "experimentID" : "files.caches",
+          "id" : "720A4C76-0106-4DA1-BC05-88D6930F4938",
+          "operation" : "DIRECTORY_CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Caches/SandboxResearchLab-3BDF8849-6A77-401F-907C-27CA95360394",
+          "result" : "PASS",
+          "timestamp" : 1793449530422.39
+        },
+        {
+          "actualResult" : "Created 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530421.705,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create new file with known bytes",
+          "experimentID" : "files.caches",
+          "id" : "CC061CB0-2448-4F51-8407-D36D39A5CBBA",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Caches/SandboxResearchLab-3BDF8849-6A77-401F-907C-27CA95360394/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530423.007
+        },
+        {
+          "actualResult" : "Read and verified 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530421.705,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read exact initial bytes",
+          "experimentID" : "files.caches",
+          "id" : "54256F31-CA6B-421E-832F-64FAF5BBAA4A",
+          "operation" : "READ",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Caches/SandboxResearchLab-3BDF8849-6A77-401F-907C-27CA95360394/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530423.0928
+        },
+        {
+          "actualResult" : "Modified and verified 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530421.705,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Modify file and read back exact new bytes",
+          "experimentID" : "files.caches",
+          "id" : "B3C9EE2D-662E-4993-848F-7D42B7E03BA6",
+          "operation" : "WRITE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Caches/SandboxResearchLab-3BDF8849-6A77-401F-907C-27CA95360394/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530423.403
+        },
+        {
+          "actualResult" : "Entries: probe.txt",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530421.705,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Enumeration includes probe.txt",
+          "experimentID" : "files.caches",
+          "id" : "2CBD5DAD-C611-44CF-A29D-0B48F5C1708D",
+          "operation" : "ENUMERATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Caches/SandboxResearchLab-3BDF8849-6A77-401F-907C-27CA95360394",
+          "result" : "PASS",
+          "timestamp" : 1793449530423.48
+        },
+        {
+          "actualResult" : "NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:25:30 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:25:30 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionCompleteUntilFirstUserAuthentication\nNSFileReferenceCount=1\nNSFileSize=23\nNSFileSystemFileNumber=34686245\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530421.705,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read file attributes",
+          "experimentID" : "files.caches",
+          "id" : "E06E3F4B-65DA-48D5-99FC-86656415FF20",
+          "operation" : "ATTRIBUTES",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Caches/SandboxResearchLab-3BDF8849-6A77-401F-907C-27CA95360394/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530423.835
+        },
+        {
+          "actualResult" : "Deleted; absence verified by directory enumeration",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530421.705,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Delete test file and confirm absence",
+          "experimentID" : "files.caches",
+          "id" : "D71291A3-CBB0-4AB4-97BD-4E9085F31EB4",
+          "operation" : "DELETE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Caches/SandboxResearchLab-3BDF8849-6A77-401F-907C-27CA95360394/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530424.1208
+        },
+        {
+          "actualResult" : "Test directory removed",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530421.705,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Remove this run's test directory",
+          "experimentID" : "files.caches",
+          "id" : "7D0C9EA0-4D24-46B0-9C52-93C7096FA156",
+          "operation" : "CLEANUP",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Caches/SandboxResearchLab-3BDF8849-6A77-401F-907C-27CA95360394",
+          "result" : "PASS",
+          "timestamp" : 1793449530424.392
+        }
+      ],
+      "researchNotes" : "Only the unique lab directory was enumerated. This is an allowed-access baseline, not a cross-container or sandbox-escape test.",
+      "result" : "PASS",
+      "startTime" : 1793449530422.199
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "Container",
+        "expectedBehavior" : "Operations on this application's own test files should succeed while storage and protection conditions permit.",
+        "id" : "files.support",
+        "method" : "Create a unique lab directory, create/read/modify a known byte sequence, enumerate and inspect it, then delete it and verify absence.",
+        "name" : "Application Support",
+        "objective" : "Measure ordinary file operations in Application Support."
+      },
+      "endTime" : 1793449530483.592,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530480.872,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "FDA6ED68-58B6-46C1-BB20-60418970D877",
+      "operations" : [
+        {
+          "actualResult" : "Directory created",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530480.872,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create isolated test directory",
+          "experimentID" : "files.support",
+          "id" : "860782A5-A69C-4BF2-BAEC-A300A4A4FC00",
+          "operation" : "DIRECTORY_CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab-5CF07EEF-2497-4547-BF03-61E569C32DFF",
+          "result" : "PASS",
+          "timestamp" : 1793449530481.559
+        },
+        {
+          "actualResult" : "Created 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530480.872,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create new file with known bytes",
+          "experimentID" : "files.support",
+          "id" : "3771D496-105D-4A6E-83CA-7BB693FAA38E",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab-5CF07EEF-2497-4547-BF03-61E569C32DFF/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530482.1802
+        },
+        {
+          "actualResult" : "Read and verified 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530480.872,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read exact initial bytes",
+          "experimentID" : "files.support",
+          "id" : "7C8C4A5E-AB1C-4A11-BB9D-9D687462631A",
+          "operation" : "READ",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab-5CF07EEF-2497-4547-BF03-61E569C32DFF/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530482.2722
+        },
+        {
+          "actualResult" : "Modified and verified 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530480.872,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Modify file and read back exact new bytes",
+          "experimentID" : "files.support",
+          "id" : "23694798-F95F-4285-9356-D8A55406A9D8",
+          "operation" : "WRITE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab-5CF07EEF-2497-4547-BF03-61E569C32DFF/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530482.592
+        },
+        {
+          "actualResult" : "Entries: probe.txt",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530480.872,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Enumeration includes probe.txt",
+          "experimentID" : "files.support",
+          "id" : "A68DA172-8690-4013-AF69-7B3529355193",
+          "operation" : "ENUMERATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab-5CF07EEF-2497-4547-BF03-61E569C32DFF",
+          "result" : "PASS",
+          "timestamp" : 1793449530482.673
+        },
+        {
+          "actualResult" : "NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:25:30 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:25:30 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionCompleteUntilFirstUserAuthentication\nNSFileReferenceCount=1\nNSFileSize=23\nNSFileSystemFileNumber=34686249\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530480.872,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read file attributes",
+          "experimentID" : "files.support",
+          "id" : "E1134D8B-17A3-44FD-A8B9-C24E2C499BA3",
+          "operation" : "ATTRIBUTES",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab-5CF07EEF-2497-4547-BF03-61E569C32DFF/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530483.0261
+        },
+        {
+          "actualResult" : "Deleted; absence verified by directory enumeration",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530480.872,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Delete test file and confirm absence",
+          "experimentID" : "files.support",
+          "id" : "DE461316-9611-4264-BB7A-5AA005464FB3",
+          "operation" : "DELETE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab-5CF07EEF-2497-4547-BF03-61E569C32DFF/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530483.317
+        },
+        {
+          "actualResult" : "Test directory removed",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530480.872,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Remove this run's test directory",
+          "experimentID" : "files.support",
+          "id" : "0EFCB30C-EC6C-443C-B7E4-270B35078B87",
+          "operation" : "CLEANUP",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab-5CF07EEF-2497-4547-BF03-61E569C32DFF",
+          "result" : "PASS",
+          "timestamp" : 1793449530483.592
+        }
+      ],
+      "researchNotes" : "Only the unique lab directory was enumerated. This is an allowed-access baseline, not a cross-container or sandbox-escape test.",
+      "result" : "PASS",
+      "startTime" : 1793449530481.3599
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "Container",
+        "expectedBehavior" : "Operations on this application's own test files should succeed while storage and protection conditions permit.",
+        "id" : "files.temporary",
+        "method" : "Create a unique lab directory, create/read/modify a known byte sequence, enumerate and inspect it, then delete it and verify absence.",
+        "name" : "tmp",
+        "objective" : "Measure ordinary file operations in tmp."
+      },
+      "endTime" : 1793449530542.666,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530540.324,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "BFB6FFB0-FA3E-475A-86DC-FB03BF185607",
+      "operations" : [
+        {
+          "actualResult" : "Directory created",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530540.324,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create isolated test directory",
+          "experimentID" : "files.temporary",
+          "id" : "356A18BC-23CB-4C66-ABE4-BED743A56ACB",
+          "operation" : "DIRECTORY_CREATE",
+          "researcherNotes" : "",
+          "resource" : "/private/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/tmp/SandboxResearchLab-79AACB16-DC3D-40AB-9549-9898C8783F71",
+          "result" : "PASS",
+          "timestamp" : 1793449530540.972
+        },
+        {
+          "actualResult" : "Created 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530540.324,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create new file with known bytes",
+          "experimentID" : "files.temporary",
+          "id" : "69109D2D-859E-4CDD-B4FB-64CBF4C26371",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "/private/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/tmp/SandboxResearchLab-79AACB16-DC3D-40AB-9549-9898C8783F71/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530541.553
+        },
+        {
+          "actualResult" : "Read and verified 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530540.324,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read exact initial bytes",
+          "experimentID" : "files.temporary",
+          "id" : "147F5903-1BB2-400C-8A9D-01260A8D5838",
+          "operation" : "READ",
+          "researcherNotes" : "",
+          "resource" : "/private/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/tmp/SandboxResearchLab-79AACB16-DC3D-40AB-9549-9898C8783F71/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530541.62
+        },
+        {
+          "actualResult" : "Modified and verified 23 bytes",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530540.324,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Modify file and read back exact new bytes",
+          "experimentID" : "files.temporary",
+          "id" : "352DA9C1-8F55-49F8-BF5D-98B1217511E2",
+          "operation" : "WRITE",
+          "researcherNotes" : "",
+          "resource" : "/private/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/tmp/SandboxResearchLab-79AACB16-DC3D-40AB-9549-9898C8783F71/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530541.8792
+        },
+        {
+          "actualResult" : "Entries: probe.txt",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530540.324,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Enumeration includes probe.txt",
+          "experimentID" : "files.temporary",
+          "id" : "BE1A7695-DC60-4C78-A497-5BB0358175E7",
+          "operation" : "ENUMERATE",
+          "researcherNotes" : "",
+          "resource" : "/private/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/tmp/SandboxResearchLab-79AACB16-DC3D-40AB-9549-9898C8783F71",
+          "result" : "PASS",
+          "timestamp" : 1793449530541.9377
+        },
+        {
+          "actualResult" : "NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:25:30 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:25:30 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionCompleteUntilFirstUserAuthentication\nNSFileReferenceCount=1\nNSFileSize=23\nNSFileSystemFileNumber=34686253\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530540.324,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read file attributes",
+          "experimentID" : "files.temporary",
+          "id" : "D94BE616-8555-488F-BE1C-99D37AE1C32A",
+          "operation" : "ATTRIBUTES",
+          "researcherNotes" : "",
+          "resource" : "/private/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/tmp/SandboxResearchLab-79AACB16-DC3D-40AB-9549-9898C8783F71/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530542.2139
+        },
+        {
+          "actualResult" : "Deleted; absence verified by directory enumeration",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530540.324,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Delete test file and confirm absence",
+          "experimentID" : "files.temporary",
+          "id" : "D28C23F0-FD4C-4048-9B9D-6A5E4208C057",
+          "operation" : "DELETE",
+          "researcherNotes" : "",
+          "resource" : "/private/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/tmp/SandboxResearchLab-79AACB16-DC3D-40AB-9549-9898C8783F71/probe.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530542.428
+        },
+        {
+          "actualResult" : "Test directory removed",
+          "category" : "Container",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530540.324,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Remove this run's test directory",
+          "experimentID" : "files.temporary",
+          "id" : "25DBDC9D-F922-45F2-8067-1CBF129890D1",
+          "operation" : "CLEANUP",
+          "researcherNotes" : "",
+          "resource" : "/private/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/tmp/SandboxResearchLab-79AACB16-DC3D-40AB-9549-9898C8783F71",
+          "result" : "PASS",
+          "timestamp" : 1793449530542.666
+        }
+      ],
+      "researchNotes" : "Only the unique lab directory was enumerated. This is an allowed-access baseline, not a cross-container or sandbox-escape test.",
+      "result" : "PASS",
+      "startTime" : 1793449530540.814
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "Persistence",
+        "expectedBehavior" : "A marker remains readable and unchanged on a later launch without reinstall or data removal.",
+        "id" : "persistence.launch",
+        "method" : "Keep an independent receipt and marker. Compare the marker bytes on a later launch, then re-arm the baseline.",
+        "name" : "Persistence between launches",
+        "objective" : "Check that an app-owned Application Support file survives a process relaunch."
+      },
+      "endTime" : 1793449530608.724,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530599.3318,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "E214255A-33F9-4D48-BB99-792B89C483F5",
+      "operations" : [
+        {
+          "actualResult" : "Marker from 2026-10-31T11:18:10Z survived a different process launch; bytes match",
+          "category" : "Persistence",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530599.3318,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Previously recorded marker survives relaunch",
+          "experimentID" : "persistence.launch",
+          "id" : "CBCCBA57-3102-47AB-848A-4EE228BB5ADE",
+          "operation" : "PERSISTENCE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Persistence/launch-marker.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530605.4978
+        },
+        {
+          "actualResult" : "Baseline saved for a future launch",
+          "category" : "Persistence",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530599.3318,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Save matching marker and receipt",
+          "experimentID" : "persistence.launch",
+          "id" : "175CA1AF-87FA-4858-8AA0-208BBD93EC41",
+          "operation" : "ARM_BASELINE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Persistence/launch-marker.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449530608.722
+        }
+      ],
+      "researchNotes" : "Reinstall, backup restore, or deliberate lab-data removal invalidates continuity. Cache and tmp retention are not asserted.",
+      "result" : "PASS",
+      "startTime" : 1793449530600.549
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "Entitlements",
+        "expectedBehavior" : "Only directly observed configuration is reported as observed; signed grants are not inferred from Info.plist.",
+        "id" : "configuration.inspect",
+        "method" : "Read this app's Bundle metadata and resolve the explicitly configured App Group using FileManager.",
+        "name" : "Entitlements & configuration",
+        "objective" : "Separate observed values from build configuration and unavailable signing information."
+      },
+      "endTime" : 1793449530652.1611,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530651.5142,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "E4DBA232-0C60-471B-A81A-8A353420906E",
+      "operations" : [
+        {
+          "actualResult" : "com.xsxs18.sandboxresearchlab",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "com.xsxs18.sandboxresearchlab",
+            "knowledge" : "Observed"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "C29EF457-9369-4BFA-A80B-081D86D7A91A",
+          "operation" : "Bundle identifier",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "PASS",
+          "timestamp" : 1793449530652.148
+        },
+        {
+          "actualResult" : "Not supplied by this build",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "Not supplied by this build",
+            "knowledge" : "Configured"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "159B1097-9935-4365-BB4E-6516E413305F",
+          "operation" : "Build application identifier",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "PASS",
+          "timestamp" : 1793449530652.1511
+        },
+        {
+          "actualResult" : "Not supplied by this build",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "Not supplied by this build",
+            "knowledge" : "Configured"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "8D9C6B6E-A158-437A-A281-344FE8093541",
+          "operation" : "Build team",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "PASS",
+          "timestamp" : 1793449530652.152
+        },
+        {
+          "actualResult" : "Inspect the installed build's signature and provisioning in Xcode/codesign. Build metadata is not signed-entitlement introspection.",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "Inspect the installed build's signature and provisioning in Xcode/codesign. Build metadata is not signed-entitlement introspection.",
+            "knowledge" : "Requires manual verification"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "E0B64964-FACA-4AD5-9E90-1E877BB3F221",
+          "operation" : "Signed application identifier / team",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530652.153
+        },
+        {
+          "actualResult" : "Not configured",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "Not configured",
+            "knowledge" : "Configured"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "3344C3D4-99AF-46D9-8CE7-5261724B6825",
+          "operation" : "Expected App Group",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "PASS",
+          "timestamp" : 1793449530652.154
+        },
+        {
+          "actualResult" : "Unavailable for the expected identifier",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "Unavailable",
+            "knowledge" : "Unavailable"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "962CCCA8-BFDE-49FE-B04C-FC5D6794D338",
+          "operation" : "App Group container",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "NOT_SUPPORTED",
+          "timestamp" : 1793449530652.155
+        },
+        {
+          "actualResult" : "The Keychain experiment observes the returned access-group attribute of its own newly created item. It does not enumerate entitled groups.",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "The Keychain experiment observes the returned access-group attribute of its own newly created item. It does not enumerate entitled groups.",
+            "knowledge" : "Requires manual verification"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "75F4C30A-505B-4D9C-8B5D-3E2E91E4A70D",
+          "operation" : "Keychain Access Groups",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530652.1558
+        },
+        {
+          "actualResult" : "No supported general iOS entitlement-dump API is used. No private SecTask APIs or provisioning-profile scraping.",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "No supported general iOS entitlement-dump API is used. No private SecTask APIs or provisioning-profile scraping.",
+            "knowledge" : "Unavailable"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "56E5F5A0-2121-406D-94C6-6158791D9F43",
+          "operation" : "All signed entitlements",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "NOT_SUPPORTED",
+          "timestamp" : 1793449530652.1558
+        },
+        {
+          "actualResult" : "sandboxresearchlab",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "sandboxresearchlab",
+            "knowledge" : "Configured"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "027BB15D-425D-4A80-B423-BCE6DF97295B",
+          "operation" : "URL schemes",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "PASS",
+          "timestamp" : 1793449530652.1567
+        },
+        {
+          "actualResult" : "None declared",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "None declared",
+            "knowledge" : "Configured"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "6AE1433D-2B3F-4D14-8911-64D11D845DC2",
+          "operation" : "Associated domains (declared metadata)",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "PASS",
+          "timestamp" : 1793449530652.158
+        },
+        {
+          "actualResult" : "Requires signed Associated Domains entitlement, an owned HTTPS domain with AASA, and an external tap on device.",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "Requires signed Associated Domains entitlement, an owned HTTPS domain with AASA, and an external tap on device.",
+            "knowledge" : "Requires manual verification"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "D7B1538E-29FD-49FF-A565-DE0A8AD40373",
+          "operation" : "Universal-link association",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530652.1602
+        },
+        {
+          "actualResult" : "System share sheet for app-created files; user-selected JSON import. No bundled share extension or implicit shared-container access.",
+          "category" : "Entitlements",
+          "details" : {
+            "compare.configuration" : "System share sheet for app-created files; user-selected JSON import. No bundled share extension or implicit shared-container access.",
+            "knowledge" : "Configured"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530651.5142,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Report provenance accurately",
+          "experimentID" : "configuration.inspect",
+          "id" : "7127585C-38F9-4A8D-95E3-D149230E38B1",
+          "operation" : "Share/document communication",
+          "researcherNotes" : "",
+          "resource" : "This application's configuration",
+          "result" : "PASS",
+          "timestamp" : 1793449530652.1611
+        }
+      ],
+      "researchNotes" : "",
+      "result" : "NOT_TESTED",
+      "startTime" : 1793449530652.008
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "App Group",
+        "expectedBehavior" : "Configured, provisioned groups resolve; missing configuration is NOT_SUPPORTED.",
+        "id" : "files.app-group",
+        "method" : "Resolve the configured group identifier and run the isolated file lifecycle if available.",
+        "name" : "Optional App Group",
+        "objective" : "Test only an App Group container authorized for this application."
+      },
+      "endTime" : 1793449530706.491,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530705.978,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "667F6D91-0203-4C49-B403-4D9187468C6C",
+      "operations" : [
+        {
+          "actualResult" : "No authorized container resolved. Enable App Groups in Signing & Capabilities, select your group, and set LabAppGroupIdentifier to the same identifier. Rebuild with a matching provisioning profile.",
+          "category" : "App Group",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530705.978,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Resolve an entitled App Group container",
+          "experimentID" : "files.app-group",
+          "id" : "8798CCAD-CCC3-4280-87C5-84F49A667A55",
+          "operation" : "RESOLVE_GROUP",
+          "researcherNotes" : "",
+          "resource" : "No group configured",
+          "result" : "NOT_SUPPORTED",
+          "timestamp" : 1793449530706.49
+        }
+      ],
+      "researchNotes" : "",
+      "result" : "NOT_SUPPORTED",
+      "startTime" : 1793449530706.476
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "Keychain",
+        "expectedBehavior" : "An app can manage its own item when protected data is accessible; deletion is verified by errSecItemNotFound.",
+        "id" : "keychain.own-item",
+        "method" : "Use a unique generic-password service/account, non-synchronizing ThisDeviceOnly accessibility, and exact-match queries. Verify byte equality without exporting the bytes.",
+        "name" : "Keychain lifecycle",
+        "objective" : "Measure create, retrieve, update and delete for a single item owned by this run."
+      },
+      "endTime" : 1793449530787.191,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530766.363,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "839C2E2C-9CB5-4E79-90E8-E9EFD9963DEF",
+      "operations" : [
+        {
+          "actualResult" : "OSStatus 0: No error.. Verification: matched / not applicable",
+          "category" : "Keychain",
+          "details" : {
+            "OSStatus" : "0",
+            "expectedOSStatus" : "0"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530766.363,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "OSStatus 0; returned values match when applicable",
+          "experimentID" : "keychain.own-item",
+          "id" : "DDDF6903-BAEB-4C0D-8BC6-FBD5DAE860C7",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "lab.keychain.2FA3D468-33C3-424C-90D1-942FE5196FD2",
+          "result" : "PASS",
+          "timestamp" : 1793449530782.734
+        },
+        {
+          "actualResult" : "OSStatus 0: No error.. Verification: matched / not applicable",
+          "category" : "Keychain",
+          "details" : {
+            "OSStatus" : "0",
+            "compare.observedAccessGroup" : "TEAMID.*",
+            "expectedOSStatus" : "0",
+            "knowledge" : "Observed attribute of this run's own item; not a list of all entitled groups"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530766.363,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "OSStatus 0; returned values match when applicable",
+          "experimentID" : "keychain.own-item",
+          "id" : "705BD938-7372-49C4-AE2D-F9777506C615",
+          "operation" : "READ",
+          "researcherNotes" : "",
+          "resource" : "lab.keychain.2FA3D468-33C3-424C-90D1-942FE5196FD2",
+          "result" : "PASS",
+          "timestamp" : 1793449530783.715
+        },
+        {
+          "actualResult" : "OSStatus 0: No error.. Verification: matched / not applicable",
+          "category" : "Keychain",
+          "details" : {
+            "OSStatus" : "0",
+            "expectedOSStatus" : "0"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530766.363,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "OSStatus 0; returned values match when applicable",
+          "experimentID" : "keychain.own-item",
+          "id" : "2CEE11C0-D08B-466A-B369-B4E1A37518A8",
+          "operation" : "UPDATE",
+          "researcherNotes" : "",
+          "resource" : "lab.keychain.2FA3D468-33C3-424C-90D1-942FE5196FD2",
+          "result" : "PASS",
+          "timestamp" : 1793449530785.52
+        },
+        {
+          "actualResult" : "OSStatus 0: No error.. Verification: matched / not applicable",
+          "category" : "Keychain",
+          "details" : {
+            "OSStatus" : "0",
+            "expectedOSStatus" : "0"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530766.363,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "OSStatus 0; returned values match when applicable",
+          "experimentID" : "keychain.own-item",
+          "id" : "38C6FD00-01FC-4BDC-9B32-5B57DD98AF35",
+          "operation" : "READ_UPDATED",
+          "researcherNotes" : "",
+          "resource" : "lab.keychain.2FA3D468-33C3-424C-90D1-942FE5196FD2",
+          "result" : "PASS",
+          "timestamp" : 1793449530786.278
+        },
+        {
+          "actualResult" : "OSStatus 0: No error.. Verification: matched / not applicable",
+          "category" : "Keychain",
+          "details" : {
+            "OSStatus" : "0",
+            "expectedOSStatus" : "0"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530766.363,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "OSStatus 0; returned values match when applicable",
+          "experimentID" : "keychain.own-item",
+          "id" : "2AB7D82E-3C06-4EA3-AF42-E05500235A15",
+          "operation" : "DELETE",
+          "researcherNotes" : "",
+          "resource" : "lab.keychain.2FA3D468-33C3-424C-90D1-942FE5196FD2",
+          "result" : "PASS",
+          "timestamp" : 1793449530786.874
+        },
+        {
+          "actualResult" : "OSStatus -25300: The specified item could not be found in the keychain.. Verification: matched / not applicable",
+          "category" : "Keychain",
+          "details" : {
+            "OSStatus" : "-25300",
+            "expectedOSStatus" : "-25300"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530766.363,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "OSStatus -25300; returned values match when applicable",
+          "experimentID" : "keychain.own-item",
+          "id" : "0EF4E92B-E099-40E7-A4D0-B9EA969258A3",
+          "operation" : "VERIFY_DELETED",
+          "researcherNotes" : "",
+          "resource" : "lab.keychain.2FA3D468-33C3-424C-90D1-942FE5196FD2",
+          "result" : "PASS",
+          "timestamp" : 1793449530787.19
+        }
+      ],
+      "researchNotes" : "No Keychain secret is logged. If deletion fails, the exact unique service is retained in evidence for manual cleanup; no broad Keychain deletion is performed.",
+      "result" : "PASS",
+      "startTime" : 1793449530766.855
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "Communication",
+        "expectedBehavior" : "Configuration is visible. Actual handoff and incoming links require explicit user interaction.",
+        "id" : "communication.configuration",
+        "method" : "Read this app's URL scheme and associated-domain metadata. Separate external interactions from automatic inspection.",
+        "name" : "Communication configuration",
+        "objective" : "Inspect the app's declared URL and document mechanisms."
+      },
+      "endTime" : 1793449530828.6792,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530828.1301,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "72BA17D2-9E58-40B4-B04B-34ED1FF36F2B",
+      "operations" : [
+        {
+          "actualResult" : "sandboxresearchlab",
+          "category" : "Communication",
+          "details" : {
+            "compare.schemes" : "sandboxresearchlab",
+            "knowledge" : "Configured"
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530828.1301,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read own declared schemes",
+          "experimentID" : "communication.configuration",
+          "id" : "6F24A709-A266-473E-8311-F08B588445FA",
+          "operation" : "URL_SCHEMES",
+          "researcherNotes" : "",
+          "resource" : "CFBundleURLTypes",
+          "result" : "PASS",
+          "timestamp" : 1793449530828.675
+        },
+        {
+          "actualResult" : "Use Manual Lab → Open own URL scheme.",
+          "category" : "Communication",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530828.1301,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Observe only actual handoffs",
+          "experimentID" : "communication.configuration",
+          "id" : "5FC389F5-7408-49FD-BFBA-0AF9E492541D",
+          "operation" : "URL_ROUND_TRIP",
+          "researcherNotes" : "",
+          "resource" : "User-mediated communication",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530828.676
+        },
+        {
+          "actualResult" : "Use Manual Lab → Share lab document. JSON/Markdown exports also use system sharing.",
+          "category" : "Communication",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530828.1301,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Observe only actual handoffs",
+          "experimentID" : "communication.configuration",
+          "id" : "2663B00F-201A-46D7-9DF3-BC7FCF9ACAA0",
+          "operation" : "DOCUMENT_HANDOFF",
+          "researcherNotes" : "",
+          "resource" : "User-mediated communication",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530828.6772
+        },
+        {
+          "actualResult" : "No owned web domain is assumed. Configure Associated Domains and AASA as documented, then tap a link from outside the app.",
+          "category" : "Communication",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530828.1301,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Observe only actual handoffs",
+          "experimentID" : "communication.configuration",
+          "id" : "92200CF3-14EA-4447-924D-75255B9BE088",
+          "operation" : "UNIVERSAL_LINK",
+          "researcherNotes" : "",
+          "resource" : "User-mediated communication",
+          "result" : "NOT_TESTED",
+          "timestamp" : 1793449530828.6782
+        },
+        {
+          "actualResult" : "No extension is bundled. The system share sheet can invoke installed, user-selected extensions. App Group file access does not prove a second process exchanged data.",
+          "category" : "Communication",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530828.1301,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Observe only actual handoffs",
+          "experimentID" : "communication.configuration",
+          "id" : "CCDE10B9-591C-44CF-8D53-279458AEB415",
+          "operation" : "SHARE_EXTENSION",
+          "researcherNotes" : "",
+          "resource" : "User-mediated communication",
+          "result" : "NOT_SUPPORTED",
+          "timestamp" : 1793449530828.6782
+        }
+      ],
+      "researchNotes" : "",
+      "result" : "NOT_TESTED",
+      "startTime" : 1793449530828.6418
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "File Protection",
+        "expectedBehavior" : "The requested class is returned by file attributes and the file is readable in the current protection state. Lock enforcement is a separate manual observation.",
+        "id" : "protection.complete",
+        "method" : "Create a file, set protection, inspect the returned protection attribute, read exact bytes, then remove the file.",
+        "name" : "Protection: Complete",
+        "objective" : "Apply and inspect NSFileProtectionComplete on an app-owned file."
+      },
+      "endTime" : 1793449530891.361,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530887.318,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "7EFB15F2-0B98-4E27-B46C-A257794428AA",
+      "operations" : [
+        {
+          "actualResult" : "Created 34 bytes",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530887.318,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create own protection test file",
+          "experimentID" : "protection.complete",
+          "id" : "E3E7A027-3DB7-4C5E-8055-644E6030C776",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-B2B93E67-4AFD-4A7B-9BAE-D732BDF089B0/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530888.774
+        },
+        {
+          "actualResult" : "Set NSFileProtectionComplete",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530887.318,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "NSFileProtectionComplete",
+          "experimentID" : "protection.complete",
+          "id" : "8F09F8EA-95B7-47C5-B406-E8AD542AAFEA",
+          "operation" : "SET_PROTECTION",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-B2B93E67-4AFD-4A7B-9BAE-D732BDF089B0/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530890.1858
+        },
+        {
+          "actualResult" : "NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:25:30 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:25:30 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionComplete\nNSFileReferenceCount=1\nNSFileSize=34\nNSFileSystemFileNumber=34686271\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530887.318,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Returned protection equals NSFileProtectionComplete",
+          "experimentID" : "protection.complete",
+          "id" : "F5E64BB8-4861-4D33-87BE-A85EC3860642",
+          "operation" : "ATTRIBUTES",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-B2B93E67-4AFD-4A7B-9BAE-D732BDF089B0/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530890.567
+        },
+        {
+          "actualResult" : "Readback matched; this alone does not validate locked-device enforcement",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530887.318,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read exact test bytes in current protection state",
+          "experimentID" : "protection.complete",
+          "id" : "2B222421-494A-42AF-9241-68EBFECDA80C",
+          "operation" : "READ",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-B2B93E67-4AFD-4A7B-9BAE-D732BDF089B0/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530890.8901
+        },
+        {
+          "actualResult" : "Removed test directory",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530887.318,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Remove this run's files",
+          "experimentID" : "protection.complete",
+          "id" : "D7503BE6-4AAB-4677-B77C-3F1165166E7B",
+          "operation" : "CLEANUP",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-B2B93E67-4AFD-4A7B-9BAE-D732BDF089B0",
+          "result" : "PASS",
+          "timestamp" : 1793449530891.36
+        }
+      ],
+      "researchNotes" : "Access becomes unavailable shortly after locking. Timing and process suspension matter.",
+      "result" : "PASS",
+      "startTime" : 1793449530887.8223
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "File Protection",
+        "expectedBehavior" : "The requested class is returned by file attributes and the file is readable in the current protection state. Lock enforcement is a separate manual observation.",
+        "id" : "protection.unlessOpen",
+        "method" : "Create a file, set protection, inspect the returned protection attribute, read exact bytes, then remove the file.",
+        "name" : "Protection: Complete unless open",
+        "objective" : "Apply and inspect NSFileProtectionCompleteUnlessOpen on an app-owned file."
+      },
+      "endTime" : 1793449530950.489,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530946.796,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "EBFA7E9A-BE28-40EE-9588-84583540781A",
+      "operations" : [
+        {
+          "actualResult" : "Created 34 bytes",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530946.796,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create own protection test file",
+          "experimentID" : "protection.unlessOpen",
+          "id" : "7B17F4B0-078B-428B-BFB6-B41E3BB89B54",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-ED7AC75C-83AC-455D-9AE7-FCC64056786F/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530948.22
+        },
+        {
+          "actualResult" : "Set NSFileProtectionCompleteUnlessOpen",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530946.796,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "NSFileProtectionCompleteUnlessOpen",
+          "experimentID" : "protection.unlessOpen",
+          "id" : "2AD657BE-A1F8-4A89-B9A5-D46881823745",
+          "operation" : "SET_PROTECTION",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-ED7AC75C-83AC-455D-9AE7-FCC64056786F/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530949.575
+        },
+        {
+          "actualResult" : "NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:25:30 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:25:30 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionCompleteUnlessOpen\nNSFileReferenceCount=1\nNSFileSize=34\nNSFileSystemFileNumber=34686276\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530946.796,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Returned protection equals NSFileProtectionCompleteUnlessOpen",
+          "experimentID" : "protection.unlessOpen",
+          "id" : "17967E8F-48D2-4D23-B275-7602AD092FDA",
+          "operation" : "ATTRIBUTES",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-ED7AC75C-83AC-455D-9AE7-FCC64056786F/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530949.94
+        },
+        {
+          "actualResult" : "Readback matched; this alone does not validate locked-device enforcement",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530946.796,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read exact test bytes in current protection state",
+          "experimentID" : "protection.unlessOpen",
+          "id" : "578784D6-C19C-4155-8E87-972045116215",
+          "operation" : "READ",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-ED7AC75C-83AC-455D-9AE7-FCC64056786F/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530950.027
+        },
+        {
+          "actualResult" : "Removed test directory",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530946.796,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Remove this run's files",
+          "experimentID" : "protection.unlessOpen",
+          "id" : "0997F6A1-9DDE-454F-8DDE-2EF182933759",
+          "operation" : "CLEANUP",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-ED7AC75C-83AC-455D-9AE7-FCC64056786F",
+          "result" : "PASS",
+          "timestamp" : 1793449530950.488
+        }
+      ],
+      "researchNotes" : "An already-open file can remain accessible after locking. Opening existing closed files is restricted.",
+      "result" : "PASS",
+      "startTime" : 1793449530947.273
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "File Protection",
+        "expectedBehavior" : "The requested class is returned by file attributes and the file is readable in the current protection state. Lock enforcement is a separate manual observation.",
+        "id" : "protection.untilFirstAuthentication",
+        "method" : "Create a file, set protection, inspect the returned protection attribute, read exact bytes, then remove the file.",
+        "name" : "Protection: Until first authentication",
+        "objective" : "Apply and inspect NSFileProtectionCompleteUntilFirstUserAuthentication on an app-owned file."
+      },
+      "endTime" : 1793449530994.555,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449530992.111,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "1E30B11D-73C5-492D-BD8A-3C7C97A82B89",
+      "operations" : [
+        {
+          "actualResult" : "Created 34 bytes",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530992.111,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create own protection test file",
+          "experimentID" : "protection.untilFirstAuthentication",
+          "id" : "2345E795-7003-4F79-99C8-A6C32EE904C5",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-FD4E371C-BC2F-44B0-82C2-AE458167DC2A/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530993.53
+        },
+        {
+          "actualResult" : "Set NSFileProtectionCompleteUntilFirstUserAuthentication",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530992.111,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "NSFileProtectionCompleteUntilFirstUserAuthentication",
+          "experimentID" : "protection.untilFirstAuthentication",
+          "id" : "F0E43F91-5DF9-4F00-823A-80315853144F",
+          "operation" : "SET_PROTECTION",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-FD4E371C-BC2F-44B0-82C2-AE458167DC2A/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530993.6719
+        },
+        {
+          "actualResult" : "NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:25:30 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:25:30 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionCompleteUntilFirstUserAuthentication\nNSFileReferenceCount=1\nNSFileSize=34\nNSFileSystemFileNumber=34686281\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530992.111,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Returned protection equals NSFileProtectionCompleteUntilFirstUserAuthentication",
+          "experimentID" : "protection.untilFirstAuthentication",
+          "id" : "CCCECD03-7AB1-422A-A010-40C475C22C5C",
+          "operation" : "ATTRIBUTES",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-FD4E371C-BC2F-44B0-82C2-AE458167DC2A/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530994.022
+        },
+        {
+          "actualResult" : "Readback matched; this alone does not validate locked-device enforcement",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530992.111,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read exact test bytes in current protection state",
+          "experimentID" : "protection.untilFirstAuthentication",
+          "id" : "91CABEDD-3657-4015-A1FA-3562104B0B27",
+          "operation" : "READ",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-FD4E371C-BC2F-44B0-82C2-AE458167DC2A/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449530994.108
+        },
+        {
+          "actualResult" : "Removed test directory",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449530992.111,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Remove this run's files",
+          "experimentID" : "protection.untilFirstAuthentication",
+          "id" : "B692EAE9-8111-4418-A499-E3DCCABB8403",
+          "operation" : "CLEANUP",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-FD4E371C-BC2F-44B0-82C2-AE458167DC2A",
+          "result" : "PASS",
+          "timestamp" : 1793449530994.554
+        }
+      ],
+      "researchNotes" : "Unavailable until the first unlock after boot; remains accessible through subsequent locks.",
+      "result" : "PASS",
+      "startTime" : 1793449530992.6062
+    },
+    {
+      "definition" : {
+        "automatic" : true,
+        "category" : "File Protection",
+        "expectedBehavior" : "The requested class is returned by file attributes and the file is readable in the current protection state. Lock enforcement is a separate manual observation.",
+        "id" : "protection.none",
+        "method" : "Create a file, set protection, inspect the returned protection attribute, read exact bytes, then remove the file.",
+        "name" : "Protection: No file protection",
+        "objective" : "Apply and inspect NSFileProtectionNone on an app-owned file."
+      },
+      "endTime" : 1793449531056.0242,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449531052.967,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "D7808BE1-B0F4-4A45-94B7-643B42374472",
+      "operations" : [
+        {
+          "actualResult" : "Created 34 bytes",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449531052.967,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create own protection test file",
+          "experimentID" : "protection.none",
+          "id" : "650C774B-1BBE-49BF-ABCE-182390A49C69",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-2D6D0C96-FD09-45F5-AA34-255A563B4BCA/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449531054.4429
+        },
+        {
+          "actualResult" : "Set NSFileProtectionNone",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449531052.967,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "NSFileProtectionNone",
+          "experimentID" : "protection.none",
+          "id" : "029C82DB-1903-456D-8F70-FD5EEC798935",
+          "operation" : "SET_PROTECTION",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-2D6D0C96-FD09-45F5-AA34-255A563B4BCA/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449531054.8691
+        },
+        {
+          "actualResult" : "NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:25:31 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:25:31 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionNone\nNSFileReferenceCount=1\nNSFileSize=34\nNSFileSystemFileNumber=34686285\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449531052.967,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Returned protection equals NSFileProtectionNone",
+          "experimentID" : "protection.none",
+          "id" : "204EE236-C092-46FC-AD36-8D1D928675D4",
+          "operation" : "ATTRIBUTES",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-2D6D0C96-FD09-45F5-AA34-255A563B4BCA/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449531055.2312
+        },
+        {
+          "actualResult" : "Readback matched; this alone does not validate locked-device enforcement",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449531052.967,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read exact test bytes in current protection state",
+          "experimentID" : "protection.none",
+          "id" : "80CEF5B8-D106-47A9-AE28-5A7EB37780C6",
+          "operation" : "READ",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-2D6D0C96-FD09-45F5-AA34-255A563B4BCA/probe.bin",
+          "result" : "PASS",
+          "timestamp" : 1793449531055.569
+        },
+        {
+          "actualResult" : "Removed test directory",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449531052.967,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "A5FEF06A-B229-4692-8770-592F429E4EF6",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Remove this run's files",
+          "experimentID" : "protection.none",
+          "id" : "5D50D889-26BD-4765-AA5B-4BD10203612A",
+          "operation" : "CLEANUP",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/Protection-2D6D0C96-FD09-45F5-AA34-255A563B4BCA",
+          "result" : "PASS",
+          "timestamp" : 1793449531056.0222
+        }
+      ],
+      "researchNotes" : "No lock-dependent file protection. This does not mean raw storage lacks hardware encryption.",
+      "result" : "PASS",
+      "startTime" : 1793449531053.467
+    }
+  ],
+  "id" : "D71A12ED-9BFE-42F3-B273-B491DBDF0689",
+  "researcherNotes" : "",
+  "schemaVersion" : 1,
+  "startTime" : 1793449530082.258,
+  "title" : "Safe Research Suite"
+}

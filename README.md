@@ -6,9 +6,9 @@ SandboxResearchLab lets you create files, try different protection settings, wor
 
 The app uses public Apple APIs and works with data it creates itself. It doesn't read another app's private files, bypass security controls, or turn an unexpected result into a vulnerability claim.
 
-**[Download the IPA](https://github.com/xsxs18-dev/iOS-Sandbox-Research/releases/latest)** · **[Research methodology](Documentation/Research-Methodology.md)** · **[Build verification](Documentation/Build-Verification.md)**
+**[Download the IPA](https://github.com/xsxs18-dev/iOS-Sandbox-Research/releases/latest)** · **[First device results](Research/2026-10-31-iphone-xr-ios18.4.md)** · **[Research methodology](Documentation/Research-Methodology.md)** · **[Build verification](Documentation/Build-Verification.md)**
 
-> The v1.0.0 IPA is built, but still needs Apple signing and provisioning for your device. The code has been compiled for iOS and the portable tests have passed. Real iPhone observations and screenshots still need to come from running the app.
+> The v1.0.0 IPA still needs to be signed for your device before installation. The lab has now run on a real iPhone XR with iOS 18.4. The [results](Research/2026-10-31-iphone-xr-ios18.4.md), raw [sessions and reports](Example-Reports/2026-10-31-iphone-xr-ios18.4/README.md) and screenshots come from that device.
 
 ## What you can try
 
@@ -54,6 +54,10 @@ xtool dev build --configuration release --sign --ipa
 ```
 
 See xtool's [device setup guide](https://xtool.sh/tutorials/xtool/first-app/) for pairing and installation. Read any certificate-management prompts carefully; replacing existing certificates can affect other development apps.
+
+Once a development-signed build is installed, you can also run the experiments and collect the sessions over USB from Linux. See [Device-Automation.md](Documentation/Device-Automation.md).
+
+Record what the installed build was actually signed with. On-device signers often add far more entitlements than the empty entitlements file in this repository, including wildcard Keychain groups and App Groups. That changes how Keychain and App Group results should be read.
 
 ### In Xcode
 
@@ -115,9 +119,9 @@ Core/
   Tests/ResearchCoreTests/    Portable tests
 Resources/                    App metadata, icon, privacy manifest and entitlements
 Documentation/                Setup guides and research procedures
-Research/                     Guidance for handling real findings
-Example-Reports/              No fabricated device reports
-Scripts/                      Xcode project generation and IPA validation
+Research/                     Device research notes and guidance for handling real findings
+Example-Reports/              Real device sessions, reports and screenshots (no fabricated data)
+Scripts/                      Xcode project generation, IPA validation, USB device driver, report tool
 SandboxResearchLab.xcodeproj/ Xcode project
 Package.swift, xtool.yml      Linux/xtool build configuration
 ```
@@ -126,7 +130,7 @@ The UI runs on the main actor. File and Keychain work, exports and session stora
 
 ## Tests and current limits
 
-Run `swift test --package-path Core` to check the portable logic. The 23 tests cover JSON, reports, comparisons, state handling, errors, storage and file operations in isolated host directories. These are software tests, not evidence of iPhone sandbox behavior. The actual checks performed are recorded in [Build-Verification.md](Documentation/Build-Verification.md).
+Run `swift test --package-path Core` to check the portable logic. The 24 tests cover JSON, reports, comparisons, state handling, errors, storage and file operations in isolated host directories. These are software tests, not evidence of iPhone sandbox behavior. The actual checks performed are recorded in [Build-Verification.md](Documentation/Build-Verification.md).
 
 A few limits matter when interpreting a session:
 
@@ -138,7 +142,13 @@ A few limits matter when interpreting a session:
 
 ## Screenshots
 
-No device screenshots yet. Useful captures would be the dashboard after a real run, the file-access matrix and a session comparison. Review paths and notes before publishing a screenshot.
+From the [iPhone XR / iOS 18.4 run](Example-Reports/2026-10-31-iphone-xr-ios18.4/README.md):
+
+| Dashboard | File-access matrix | Experiment results |
+| --- | --- | --- |
+| <img src="Example-Reports/2026-10-31-iphone-xr-ios18.4/screenshots/01-dashboard-after-suite.png" width="240" alt="Dashboard after a suite run"> | <img src="Example-Reports/2026-10-31-iphone-xr-ios18.4/screenshots/02-file-access-matrix.png" width="240" alt="File-access matrix"> | <img src="Example-Reports/2026-10-31-iphone-xr-ios18.4/screenshots/03-experiment-results.png" width="240" alt="Experiment results"> |
+
+Review paths and notes before publishing your own screenshots. Share-sheet captures also show the phone's installed apps.
 
 ## Research responsibly
 

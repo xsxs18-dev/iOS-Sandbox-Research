@@ -1,0 +1,110 @@
+{
+  "completion" : "completed",
+  "endTime" : 1793449673871.9011,
+  "environment" : {
+    "appVersion" : "1.0.0",
+    "application" : "SandboxResearchLab",
+    "build" : "1.0.0",
+    "bundleID" : "com.xsxs18.sandboxresearchlab",
+    "capturedAt" : 1793449610660.434,
+    "deviceModel" : "iPhone11,8",
+    "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+    "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+    "protectedDataAvailable" : true,
+    "simulator" : false
+  },
+  "experiments" : [
+    {
+      "definition" : {
+        "automatic" : false,
+        "category" : "Communication",
+        "expectedBehavior" : "The user controls the destination. Completion confirms the system activity callback, not what another app stored.",
+        "id" : "manual.document",
+        "method" : "Write a lab-owned text document and use UIActivityViewController; record the activity completion callback.",
+        "name" : "Document / share handoff",
+        "objective" : "Offer a non-sensitive app-created document through the system share sheet."
+      },
+      "endTime" : 1793449673871.8938,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449610660.606,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "E5723863-C4C0-44ED-B580-FAF132309C23",
+      "operations" : [
+        {
+          "actualResult" : "Lab text document written",
+          "category" : "Communication",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449610741.9683,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create non-sensitive document",
+          "experimentID" : "manual.document",
+          "id" : "DC22372F-B7CC-4426-AB08-717D6E02E7A0",
+          "operation" : "CREATE",
+          "researcherNotes" : "",
+          "resource" : "/private/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/tmp/LabExports-DDE32152-D4B6-42A0-826D-E2129BC6CFE4/SandboxResearchLab-Document.txt",
+          "result" : "PASS",
+          "timestamp" : 1793449610741.972
+        },
+        {
+          "actualResult" : "Activity reported completion; destination storage is not verified",
+          "category" : "Communication",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449673871.856,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "User-selected activity reports completion",
+          "experimentID" : "manual.document",
+          "id" : "957C7618-FA8F-4BE3-AF06-85AD66B8E9C0",
+          "operation" : "SHARE",
+          "researcherNotes" : "",
+          "resource" : "com.apple.UIKit.activity.CopyToPasteboard",
+          "result" : "PASS",
+          "timestamp" : 1793449673871.86
+        }
+      ],
+      "researchNotes" : "",
+      "result" : "PASS",
+      "startTime" : 1793449610660.609
+    }
+  ],
+  "id" : "8D6315E1-E70B-41E9-B26E-ABB0B7F3E4DF",
+  "researcherNotes" : "",
+  "schemaVersion" : 1,
+  "startTime" : 1793449610660.441,
+  "title" : "Document / share handoff"
+}

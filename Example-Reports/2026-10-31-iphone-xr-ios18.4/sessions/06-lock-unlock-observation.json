@@ -1,0 +1,704 @@
+{
+  "completion" : "completed",
+  "endTime" : 1793449807514.7551,
+  "environment" : {
+    "appVersion" : "1.0.0",
+    "application" : "SandboxResearchLab",
+    "build" : "1.0.0",
+    "bundleID" : "com.xsxs18.sandboxresearchlab",
+    "capturedAt" : 1793449719329.742,
+    "deviceModel" : "iPhone11,8",
+    "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+    "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+    "protectedDataAvailable" : true,
+    "simulator" : false
+  },
+  "experiments" : [
+    {
+      "definition" : {
+        "automatic" : false,
+        "category" : "File Protection",
+        "expectedBehavior" : "Each sample records its real availability and read result. iOS may suspend the process; missing locked-state samples cannot establish enforcement.",
+        "id" : "manual.protection",
+        "method" : "Arm files of all four classes; retain one Class B handle. Sample reads when notifications arrive and when explicitly requested. Stop removes the files.",
+        "name" : "Lock-state observation",
+        "objective" : "Observe protection reads around notifications delivered to this foreground app."
+      },
+      "endTime" : 1793449807407.6482,
+      "environment" : {
+        "appVersion" : "1.0.0",
+        "application" : "SandboxResearchLab",
+        "build" : "1.0.0",
+        "bundleID" : "com.xsxs18.sandboxresearchlab",
+        "capturedAt" : 1793449719329.831,
+        "deviceModel" : "iPhone11,8",
+        "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+        "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+        "protectedDataAvailable" : true,
+        "simulator" : false
+      },
+      "errors" : [
+
+      ],
+      "id" : "0AFE31BE-0CDA-47E4-8438-D57615E8DF66",
+      "operations" : [
+        {
+          "actualResult" : "Created; NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:28:39 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:28:39 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionComplete\nNSFileReferenceCount=1\nNSFileSize=31\nNSFileSystemFileNumber=34686583\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449719329.831,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create file with NSFileProtectionComplete",
+          "experimentID" : "manual.protection",
+          "id" : "B8DD9C93-9642-436D-92AF-4502D830EF53",
+          "operation" : "ARM_complete",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/complete",
+          "result" : "PASS",
+          "timestamp" : 1793449719343.075
+        },
+        {
+          "actualResult" : "Created; NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:28:39 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:28:39 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionCompleteUnlessOpen\nNSFileReferenceCount=1\nNSFileSize=31\nNSFileSystemFileNumber=34686585\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449719329.831,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create file with NSFileProtectionCompleteUnlessOpen",
+          "experimentID" : "manual.protection",
+          "id" : "BEB17DA1-970A-4A0B-A1FA-571FE1D49D17",
+          "operation" : "ARM_unlessOpen",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/unlessOpen",
+          "result" : "PASS",
+          "timestamp" : 1793449719345.657
+        },
+        {
+          "actualResult" : "Created; NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:28:39 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:28:39 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionCompleteUntilFirstUserAuthentication\nNSFileReferenceCount=1\nNSFileSize=31\nNSFileSystemFileNumber=34686587\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449719329.831,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create file with NSFileProtectionCompleteUntilFirstUserAuthentication",
+          "experimentID" : "manual.protection",
+          "id" : "64EC9920-69B7-474A-BCAE-EA33AA411CE3",
+          "operation" : "ARM_untilFirstAuthentication",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/untilFirstAuthentication",
+          "result" : "PASS",
+          "timestamp" : 1793449719346.8489
+        },
+        {
+          "actualResult" : "Created; NSFileAppendOnly=0\nNSFileCreationDate=2026-10-31 12:28:39 +0000\nNSFileExtensionHidden=0\nNSFileGroupOwnerAccountID=501\nNSFileGroupOwnerAccountName=mobile\nNSFileImmutable=0\nNSFileModificationDate=2026-10-31 12:28:39 +0000\nNSFileOwnerAccountID=501\nNSFileOwnerAccountName=mobile\nNSFilePosixPermissions=420\nNSFileProtectionKey=NSFileProtectionNone\nNSFileReferenceCount=1\nNSFileSize=31\nNSFileSystemFileNumber=34686588\nNSFileSystemNumber=16777225\nNSFileType=NSFileTypeRegular",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449719329.831,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Create file with NSFileProtectionNone",
+          "experimentID" : "manual.protection",
+          "id" : "65C59C11-EF8D-4173-AC0E-5CD9D9C731FA",
+          "operation" : "ARM_none",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/none",
+          "result" : "PASS",
+          "timestamp" : 1793449719348.3901
+        },
+        {
+          "actualResult" : "protectedDataWillBecomeUnavailable delivered",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449740581.286,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record only delivered events",
+          "experimentID" : "manual.protection",
+          "id" : "F494B078-9B3E-45FA-9275-C12C13C5A08D",
+          "operation" : "NOTIFICATION",
+          "researcherNotes" : "",
+          "resource" : "UIApplication",
+          "result" : "PASS",
+          "timestamp" : 1793449740581.426
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionComplete",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449740581.286,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "A73B0767-B76F-40D3-8933-DC26DF76594E",
+          "operation" : "READ_complete",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/complete",
+          "result" : "PASS",
+          "timestamp" : 1793449740582.746
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionCompleteUnlessOpen",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449740581.286,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "3983F8E2-23B9-4215-849E-C35AB9395E88",
+          "operation" : "READ_unlessOpen",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/unlessOpen",
+          "result" : "PASS",
+          "timestamp" : 1793449740583.683
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionCompleteUntilFirstUserAuthentication",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449740581.286,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "B689A0CF-3A35-4066-8ED7-A752606BF9CA",
+          "operation" : "READ_untilFirstAuthentication",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/untilFirstAuthentication",
+          "result" : "PASS",
+          "timestamp" : 1793449740584.828
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionNone",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449740581.286,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "3925A5F0-31EA-4D4A-82D1-CB16D5CAC54B",
+          "operation" : "READ_none",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/none",
+          "result" : "PASS",
+          "timestamp" : 1793449740586.007
+        },
+        {
+          "actualResult" : "Held Class B handle read matched",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449740581.286,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read using the handle retained before locking",
+          "experimentID" : "manual.protection",
+          "id" : "455D13E2-B869-47E9-8BDD-5043F03DE4BC",
+          "operation" : "READ_HELD_UNLESS_OPEN",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/unlessOpen",
+          "result" : "PASS",
+          "timestamp" : 1793449740586.519
+        },
+        {
+          "actualResult" : "protectedDataDidBecomeAvailable delivered",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449755776.614,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record only delivered events",
+          "experimentID" : "manual.protection",
+          "id" : "350D9E3D-38D1-4244-87B8-57DA7144353A",
+          "operation" : "NOTIFICATION",
+          "researcherNotes" : "",
+          "resource" : "UIApplication",
+          "result" : "PASS",
+          "timestamp" : 1793449755777.3418
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionComplete",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449755776.614,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "391B14E1-1EA5-44FA-A491-A56AF2176F7E",
+          "operation" : "READ_complete",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/complete",
+          "result" : "PASS",
+          "timestamp" : 1793449755778.583
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionCompleteUnlessOpen",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449755776.614,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "0992BA5A-6DC4-4CD1-AB60-04D8DC5225B7",
+          "operation" : "READ_unlessOpen",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/unlessOpen",
+          "result" : "PASS",
+          "timestamp" : 1793449755779.2612
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionCompleteUntilFirstUserAuthentication",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449755776.614,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "C679A997-DFEA-44EA-B6AE-B39555E4494B",
+          "operation" : "READ_untilFirstAuthentication",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/untilFirstAuthentication",
+          "result" : "PASS",
+          "timestamp" : 1793449755780.55
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionNone",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449755776.614,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "80CCF8E8-AE97-458E-B373-06D482A0E57E",
+          "operation" : "READ_none",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/none",
+          "result" : "PASS",
+          "timestamp" : 1793449755780.9438
+        },
+        {
+          "actualResult" : "Held Class B handle read matched",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449755776.614,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read using the handle retained before locking",
+          "experimentID" : "manual.protection",
+          "id" : "8E598E14-0766-4EC4-8747-E9B5BBB92FE2",
+          "operation" : "READ_HELD_UNLESS_OPEN",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/unlessOpen",
+          "result" : "PASS",
+          "timestamp" : 1793449755781.055
+        },
+        {
+          "actualResult" : "didBecomeActive delivered",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449756246.693,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record only delivered events",
+          "experimentID" : "manual.protection",
+          "id" : "3656B56D-47E6-4EB6-A60C-8A96F5D4C2FE",
+          "operation" : "NOTIFICATION",
+          "researcherNotes" : "",
+          "resource" : "UIApplication",
+          "result" : "PASS",
+          "timestamp" : 1793449756246.7607
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionComplete",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449756246.693,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "96B669F0-8A8A-4ABC-BFDB-D32BB9C0613A",
+          "operation" : "READ_complete",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/complete",
+          "result" : "PASS",
+          "timestamp" : 1793449756247.077
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionCompleteUnlessOpen",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449756246.693,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "CE5E4CFF-E1F8-4FDD-96AA-BAA55801186C",
+          "operation" : "READ_unlessOpen",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/unlessOpen",
+          "result" : "PASS",
+          "timestamp" : 1793449756247.278
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionCompleteUntilFirstUserAuthentication",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449756246.693,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "67080437-9E5A-4D34-8ADE-2CFA58DA28A6",
+          "operation" : "READ_untilFirstAuthentication",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/untilFirstAuthentication",
+          "result" : "PASS",
+          "timestamp" : 1793449756247.473
+        },
+        {
+          "actualResult" : "Closed-file read matched; selected class NSFileProtectionNone",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449756246.693,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Record actual read outcome; notification timing alone does not prove lock enforcement",
+          "experimentID" : "manual.protection",
+          "id" : "1DB9F9C1-00FA-4754-BBAA-B8F07DEAE138",
+          "operation" : "READ_none",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/none",
+          "result" : "PASS",
+          "timestamp" : 1793449756247.637
+        },
+        {
+          "actualResult" : "Held Class B handle read matched",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449756246.693,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Read using the handle retained before locking",
+          "experimentID" : "manual.protection",
+          "id" : "CC3D956E-8932-45E7-9BBF-E574F6C66CCD",
+          "operation" : "READ_HELD_UNLESS_OPEN",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF/unlessOpen",
+          "result" : "PASS",
+          "timestamp" : 1793449756247.7368
+        },
+        {
+          "actualResult" : "Handle closed",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449807403.9968,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Close retained file descriptor",
+          "experimentID" : "manual.protection",
+          "id" : "AC549BB4-814E-4F21-B59C-FCC778BDEB7D",
+          "operation" : "CLOSE_HANDLE",
+          "researcherNotes" : "",
+          "resource" : "Class B handle",
+          "result" : "PASS",
+          "timestamp" : 1793449807404.2202
+        },
+        {
+          "actualResult" : "Armed files removed",
+          "category" : "File Protection",
+          "details" : {
+
+          },
+          "environment" : {
+            "appVersion" : "1.0.0",
+            "application" : "SandboxResearchLab",
+            "build" : "1.0.0",
+            "bundleID" : "com.xsxs18.sandboxresearchlab",
+            "capturedAt" : 1793449807403.9968,
+            "deviceModel" : "iPhone11,8",
+            "launchID" : "6154A196-96FC-4C55-822A-0CF00B760458",
+            "osVersion" : "iOS 18.4 (Version 18.4 (Build 22E240))",
+            "protectedDataAvailable" : true,
+            "simulator" : false
+          },
+          "expectedResult" : "Remove armed test files",
+          "experimentID" : "manual.protection",
+          "id" : "5C7CEB96-26B2-4833-B09F-7FE2C4CABE72",
+          "operation" : "CLEANUP",
+          "researcherNotes" : "",
+          "resource" : "/var/mobile/Containers/Data/Application/APP-DATA-CONTAINER/Library/Application Support/SandboxResearchLab/ManualProtection-25C080FC-B6B7-4852-A19C-CBB518612DCF",
+          "result" : "PASS",
+          "timestamp" : 1793449807407.64
+        }
+      ],
+      "researchNotes" : "Lock and unlock your phone, then return here and stop to save all delivered samples. No background execution entitlement is requested.",
+      "result" : "PASS",
+      "startTime" : 1793449719329.865
+    }
+  ],
+  "id" : "22423A19-F0A9-4075-B64B-34BDE8C17479",
+  "researcherNotes" : "",
+  "schemaVersion" : 1,
+  "startTime" : 1793449719329.747,
+  "title" : "Manual lock-state observation"
+}
