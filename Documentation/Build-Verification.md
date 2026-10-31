@@ -17,7 +17,7 @@ An Apple-signing attempt used the existing xtool account. xtool required revocat
 
 ## Checks requiring other environments
 
-The repository includes a macOS GitHub Actions job that runs the portable tests, validates the Xcode project and builds the app for a generic iOS Simulator destination without signing. The [initial workflow run](https://github.com/xsxs18-dev/iOS-Sandbox-Research/actions/runs/41195656752) could not start because GitHub reported an account billing/spending-limit restriction. No macOS build steps executed. Xcode runtime/build validation is therefore not claimed; the project passed local property-list validation and the same iOS Swift sources compiled with xtool. The workflow can be rerun once the account restriction is resolved.
+The repository includes a macOS GitHub Actions job that runs the portable tests, validates the property lists and Xcode project, builds the app for a generic iOS Simulator destination without signing, and checks that the generated project is current. The first runs on 2026-10-31 could not start because of an account billing restriction. [Run 41232926418](https://github.com/xsxs18-dev/iOS-Sandbox-Research/actions/runs/41232926418) on commit `19531d6` then completed all steps: 24 tests passed, `plutil` validation passed, `xcodebuild` reported **BUILD SUCCEEDED**, and the generated project was unchanged.
 
 No physical iPhone experiments were performed during Linux implementation. The device run below was added afterwards.
 
@@ -32,7 +32,7 @@ SandboxResearchLab 1.0.0 was installed with a development signature on an iPhone
 - Results and interpretation: [Research/2026-10-31-iphone-xr-ios18.4.md](../Research/2026-10-31-iphone-xr-ios18.4.md). Data: [Example-Reports/2026-10-31-iphone-xr-ios18.4](../Example-Reports/2026-10-31-iphone-xr-ios18.4/README.md).
 - Found and fixed: session comparison treated identical errors as changed, because the localized description contains a random path. The fix is in `ResearchCore` with a regression test, so there are now 24 portable tests. The installed 1.0.0 binary still contains the old comparison until it is rebuilt.
 
-Still not verified on hardware: access while locked (the foreground app is suspended while locked), before-first-unlock behavior, provisioned App Group file access with `LabAppGroupIdentifier` set, universal links, and the Xcode build path.
+Still not verified on hardware: access while locked (the foreground app is suspended while locked), before-first-unlock behavior, provisioned App Group file access with `LabAppGroupIdentifier` set, and universal links. The Xcode path is verified as a simulator build in CI, not as a device install.
 
 ## Reproduce
 
