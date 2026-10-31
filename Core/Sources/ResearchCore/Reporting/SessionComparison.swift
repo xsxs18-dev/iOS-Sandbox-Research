@@ -11,7 +11,19 @@ public struct ResultChange: Identifiable, Sendable {
     }
     public var newPermission: Bool { before?.result == .denied && after?.result == .pass }
     public var needsReview: Bool { before?.result == .needsReview || after?.result == .needsReview || newPermission }
-    public var errorChanged: Bool { before?.error != after?.error }
+    public var errorChanged: Bool { before?.error?.comparisonKey != after?.error?.comparisonKey }
+}
+
+extension ResearchError {
+    /// Domain and code of the error and of its underlying error. Localized descriptions are not compared:
+    /// on device they embed the run's random lab directory name, so every repetition would look "changed".
+    public var comparisonKey: String {
+        let underlyingKey = underlying.flatMap { text -> String? in
+            guard let range = text.range(of: #"Error Domain=\S+ Code=-?\d+"#, options: .regularExpression) else { return nil }
+            return String(text[range])
+        }
+        return "\(domain)#\(code)#\(underlyingKey ?? underlying ?? "")"
+    }
 }
 
 public struct SessionComparison: Sendable {
@@ -36,7 +48,7 @@ public struct SessionComparison: Sendable {
             let a = left[key]; let b = right[key]
             let comparableA = a?.details.filter { $0.key.hasPrefix("compare.") }
             let comparableB = b?.details.filter { $0.key.hasPrefix("compare.") }
-            guard a?.result != b?.result || a?.error != b?.error || comparableA != comparableB else { return nil }
+            guard a?.result != b?.result || a?.error?.comparisonKey != b?.error?.comparisonKey || comparableA != comparableB else { return nil }
             return ResultChange(experimentID: b?.experimentID ?? a?.experimentID ?? key,
                                 operation: key.components(separatedBy: "/").dropFirst().joined(separator: "/"), before: a, after: b)
         }

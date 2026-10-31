@@ -113,6 +113,19 @@ final class ResearchCoreTests: XCTestCase {
         after.experiments[0].operations[0].actualResult = "Different byte-count message"
         XCTAssertTrue(SessionComparison(before: before, after: after).changes.isEmpty)
     }
+    func testComparisonIgnoresRandomPathsInsideErrorDescriptions() {
+        func denial(_ folder: String, underlyingCode: Int = 1) -> ResearchError {
+            ResearchError(domain: NSCocoaErrorDomain, code: 513,
+                          description: "Synthetic: no permission to save “SandboxResearchLab-\(folder)”",
+                          underlying: "Error Domain=NSPOSIXErrorDomain Code=\(underlyingCode) \"Synthetic\" UserInfo={path=/\(folder)}")
+        }
+        let before = session(state: .denied, error: denial(UUID().uuidString)); var after = before
+        after.id = UUID(); after.experiments[0].operations[0].error = denial(UUID().uuidString)
+        XCTAssertTrue(SessionComparison(before: before, after: after).changes.isEmpty)
+        after.experiments[0].operations[0].error = denial(UUID().uuidString, underlyingCode: 13)
+        let changed = SessionComparison(before: before, after: after)
+        XCTAssertEqual(changed.changes.count, 1); XCTAssertTrue(changed.changes[0].errorChanged)
+    }
     func testComparisonDetectsNewFailurePermissionAndChangedErrors() {
         let denied = session(state: .denied, error: ResearchError(domain: NSPOSIXErrorDomain, code: 13, description: "Synthetic"))
         var passed = denied; passed.id = UUID(); passed.experiments[0].operations[0].result = .pass; passed.experiments[0].operations[0].error = nil
