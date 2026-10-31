@@ -1,0 +1,24 @@
+name: Verify research software
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: macos-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Portable software tests (not device sandbox tests)
+        run: swift test --package-path Core
+      - name: Validate property lists and project
+        run: plutil -lint Resources/Info.plist Resources/SandboxResearchLab.entitlements Resources/PrivacyInfo.xcprivacy SandboxResearchLab.xcodeproj/project.pbxproj
+      - name: Build iOS app without device signing
+        run: xcodebuild -project SandboxResearchLab.xcodeproj -scheme SandboxResearchLab -configuration Release -destination 'generic/platform=iOS Simulator' -derivedDataPath /tmp/SandboxResearchLab-DerivedData CODE_SIGNING_ALLOWED=NO build
+      - name: Verify generated project is current
+        run: |
+          python3 Scripts/generate_xcode_project.py
+          git diff --exit-code -- SandboxResearchLab.xcodeproj

@@ -1,0 +1,58 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+  CCD2ABEF278798E04318DDB8 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/Experiments/ExperimentRunner.swift"; sourceTree = "<group>";};
+  9330EB273E0FBAB7A48763BA = {isa = PBXBuildFile; fileRef = CCD2ABEF278798E04318DDB8;};
+  F8455899A01B994F90FD5C39 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/Experiments/KeychainExperiment.swift"; sourceTree = "<group>";};
+  ECF28F40A536B733FDCADDB1 = {isa = PBXBuildFile; fileRef = F8455899A01B994F90FD5C39;};
+  793F54F58232223ED0D85ED6 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/Experiments/ProtectionExperiment.swift"; sourceTree = "<group>";};
+  46AC661023F0770D44B8F4B5 = {isa = PBXBuildFile; fileRef = 793F54F58232223ED0D85ED6;};
+  591CC2F4B49B33C78931E2F0 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/SandboxResearchLabApp.swift"; sourceTree = "<group>";};
+  4C7BF3BB9F03AFF89E294A28 = {isa = PBXBuildFile; fileRef = 591CC2F4B49B33C78931E2F0;};
+  467CD8CB93710FCF22AE96AE = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/Services/ConfigurationService.swift"; sourceTree = "<group>";};
+  E0A02B128153D17C3FCBD81E = {isa = PBXBuildFile; fileRef = 467CD8CB93710FCF22AE96AE;};
+  E23DD71BB5746D12260A1DE0 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/Services/EnvironmentService.swift"; sourceTree = "<group>";};
+  FC2A3FAFFEDBD1536F9C0B80 = {isa = PBXBuildFile; fileRef = E23DD71BB5746D12260A1DE0;};
+  7ABAE6F5BAEDC42FE4A582E5 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/Services/LabStore.swift"; sourceTree = "<group>";};
+  7F008E1DBF45F0408B9FB4D4 = {isa = PBXBuildFile; fileRef = 7ABAE6F5BAEDC42FE4A582E5;};
+  869D0F01B75A067DDE90407E = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/UI/CompareView.swift"; sourceTree = "<group>";};
+  97DADB7B1D8F3A9B6EB0C5F7 = {isa = PBXBuildFile; fileRef = 869D0F01B75A067DDE90407E;};
+  85E862A91958059D0E0F641C = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/UI/Components.swift"; sourceTree = "<group>";};
+  E48A2CF0AF25408FF0D6D799 = {isa = PBXBuildFile; fileRef = 85E862A91958059D0E0F641C;};
+  2694B28A20AE83B0E9034846 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/UI/HistoryView.swift"; sourceTree = "<group>";};
+  0D78845565690A8A0548033E = {isa = PBXBuildFile; fileRef = 2694B28A20AE83B0E9034846;};
+  1CC67D8B813261475F2320D8 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/UI/LogsView.swift"; sourceTree = "<group>";};
+  185F8DCBD2A86437F6F7D1AD = {isa = PBXBuildFile; fileRef = 1CC67D8B813261475F2320D8;};
+  2BA7680CB4C1CCAA6063151F = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/UI/ManualLabView.swift"; sourceTree = "<group>";};
+  E2EA0A369FC6B57CDF9C2132 = {isa = PBXBuildFile; fileRef = 2BA7680CB4C1CCAA6063151F;};
+  633BAE5E35E00ECCE0E7644E = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/SandboxResearchLab/UI/RootView.swift"; sourceTree = "<group>";};
+  74D41B8D64AC602D31CC8496 = {isa = PBXBuildFile; fileRef = 633BAE5E35E00ECCE0E7644E;};
+  E0E27618A2D2A8FEBDD49F35 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Resources/Assets.xcassets"; sourceTree = "<group>";};
+  627BBC9C62B0C159B656E415 = {isa = PBXBuildFile; fileRef = E0E27618A2D2A8FEBDD49F35;};
+  6327A1005FF0B783151E530B = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>";};
+  FC0CB21E6ADF24E540AC513C = {isa = PBXBuildFile; fileRef = 6327A1005FF0B783151E530B;};
+  D9C6393D6C2EE0244C1E3BAF = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Resources/Info.plist"; sourceTree = "<group>";};
+  E9D7EA6121E1D99BC00BB674 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Resources/SandboxResearchLab.entitlements"; sourceTree = "<group>";};
+  7D1043473D55BFA90E8530D3 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandboxResearchLab.app; sourceTree = BUILT_PRODUCTS_DIR;};
+  582681C2EAE02B3F3D399C0C = {isa = XCLocalSwiftPackageReference; relativePath = Core;};
+  60E262C5E4EFA18325B3550C = {isa = XCSwiftPackageProductDependency; package = 582681C2EAE02B3F3D399C0C; productName = ResearchCore;};
+  E347B75DD10A4318C3140295 = {isa = PBXBuildFile; productRef = 60E262C5E4EFA18325B3550C;};
+  A1C3CEACCD4F322048E69D2D = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (9330EB273E0FBAB7A48763BA, ECF28F40A536B733FDCADDB1, 46AC661023F0770D44B8F4B5, 4C7BF3BB9F03AFF89E294A28, E0A02B128153D17C3FCBD81E, FC2A3FAFFEDBD1536F9C0B80, 7F008E1DBF45F0408B9FB4D4, 97DADB7B1D8F3A9B6EB0C5F7, E48A2CF0AF25408FF0D6D799, 0D78845565690A8A0548033E, 185F8DCBD2A86437F6F7D1AD, E2EA0A369FC6B57CDF9C2132, 74D41B8D64AC602D31CC8496,); runOnlyForDeploymentPostprocessing = 0;};
+  FF4A15EEA61D4A3B097C1C27 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (627BBC9C62B0C159B656E415, FC0CB21E6ADF24E540AC513C,); runOnlyForDeploymentPostprocessing = 0;};
+  326A678791C89F5FAABDFBFA = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (E347B75DD10A4318C3140295,); runOnlyForDeploymentPostprocessing = 0;};
+  FBDC4F23F93125BBEEAE800C = {isa = PBXGroup; children = (7D1043473D55BFA90E8530D3,); name = Products; sourceTree = "<group>";};
+  870B3294C0CBD48AF6BBCC1B = {isa = PBXGroup; children = (CCD2ABEF278798E04318DDB8, F8455899A01B994F90FD5C39, 793F54F58232223ED0D85ED6, 591CC2F4B49B33C78931E2F0, 467CD8CB93710FCF22AE96AE, E23DD71BB5746D12260A1DE0, 7ABAE6F5BAEDC42FE4A582E5, 869D0F01B75A067DDE90407E, 85E862A91958059D0E0F641C, 2694B28A20AE83B0E9034846, 1CC67D8B813261475F2320D8, 2BA7680CB4C1CCAA6063151F, 633BAE5E35E00ECCE0E7644E, E0E27618A2D2A8FEBDD49F35, 6327A1005FF0B783151E530B, D9C6393D6C2EE0244C1E3BAF, E9D7EA6121E1D99BC00BB674, FBDC4F23F93125BBEEAE800C,); sourceTree = "<group>";};
+  7FF1594F02A39252B36C2788 = {isa = XCBuildConfiguration; buildSettings = {SDKROOT = "iphoneos"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; SWIFT_VERSION = "5.0"; CLANG_ENABLE_MODULES = "YES"; ENABLE_STRICT_OBJC_MSGSEND = "YES"; SWIFT_STRICT_CONCURRENCY = "complete"; DEBUG_INFORMATION_FORMAT = "dwarf"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";}; name = Debug;};
+  199D118360F571651611CBB6 = {isa = XCBuildConfiguration; buildSettings = {PRODUCT_BUNDLE_IDENTIFIER = "com.xsxs18.sandboxresearchlab"; PRODUCT_NAME = "SandboxResearchLab"; INFOPLIST_FILE = "Resources/Info.plist"; GENERATE_INFOPLIST_FILE = "YES"; INFOPLIST_KEY_CFBundleExecutable = "$(EXECUTABLE_NAME)"; INFOPLIST_KEY_CFBundleIdentifier = "$(PRODUCT_BUNDLE_IDENTIFIER)"; CODE_SIGN_STYLE = "Automatic"; CODE_SIGN_ENTITLEMENTS = "Resources/SandboxResearchLab.entitlements"; TARGETED_DEVICE_FAMILY = "1,2"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = "NO"; ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";}; name = Debug;};
+  8AF42D9F8E598D010F7434BA = {isa = XCBuildConfiguration; buildSettings = {SDKROOT = "iphoneos"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; SWIFT_VERSION = "5.0"; CLANG_ENABLE_MODULES = "YES"; ENABLE_STRICT_OBJC_MSGSEND = "YES"; SWIFT_STRICT_CONCURRENCY = "complete"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; SWIFT_OPTIMIZATION_LEVEL = "-O";}; name = Release;};
+  68076E06222AB98C0FAF7D3B = {isa = XCBuildConfiguration; buildSettings = {PRODUCT_BUNDLE_IDENTIFIER = "com.xsxs18.sandboxresearchlab"; PRODUCT_NAME = "SandboxResearchLab"; INFOPLIST_FILE = "Resources/Info.plist"; GENERATE_INFOPLIST_FILE = "YES"; INFOPLIST_KEY_CFBundleExecutable = "$(EXECUTABLE_NAME)"; INFOPLIST_KEY_CFBundleIdentifier = "$(PRODUCT_BUNDLE_IDENTIFIER)"; CODE_SIGN_STYLE = "Automatic"; CODE_SIGN_ENTITLEMENTS = "Resources/SandboxResearchLab.entitlements"; TARGETED_DEVICE_FAMILY = "1,2"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = "NO"; ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";}; name = Release;};
+  7DE97F2CECB2601227982F09 = {isa = XCConfigurationList; buildConfigurations = (199D118360F571651611CBB6, 68076E06222AB98C0FAF7D3B,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+  6650A2B5E24FA7522CE6B81C = {isa = XCConfigurationList; buildConfigurations = (7FF1594F02A39252B36C2788, 8AF42D9F8E598D010F7434BA,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+  0E8A3AD980EC179856012B7E = {isa = PBXNativeTarget; buildConfigurationList = 7DE97F2CECB2601227982F09; buildPhases = (A1C3CEACCD4F322048E69D2D, 326A678791C89F5FAABDFBFA, FF4A15EEA61D4A3B097C1C27,); buildRules = (); dependencies = (); name = SandboxResearchLab; packageProductDependencies = (60E262C5E4EFA18325B3550C,); productName = SandboxResearchLab; productReference = 7D1043473D55BFA90E8530D3; productType = "com.apple.product-type.application";};
+  98F54143AB4E86B28C3AFEE0 = {isa = PBXProject; attributes = {LastUpgradeCheck = 1600; TargetAttributes = {0E8A3AD980EC179856012B7E = {CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = 6650A2B5E24FA7522CE6B81C; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = 870B3294C0CBD48AF6BBCC1B; packageReferences = (582681C2EAE02B3F3D399C0C,); productRefGroup = FBDC4F23F93125BBEEAE800C; projectDirPath = ""; projectRoot = ""; targets = (0E8A3AD980EC179856012B7E,);};
+ };
+ rootObject = 98F54143AB4E86B28C3AFEE0;
+}

@@ -1,0 +1,8 @@
+version: 1
+bundleID: com.xsxs18.sandboxresearchlab
+infoPath: Resources/Info.plist
+iconPath: Resources/AppIcon.png
+entitlementsPath: Resources/SandboxResearchLab.entitlements
+resources:
+  - Resources/PrivacyInfo.xcprivacy
+skipLSP: true
